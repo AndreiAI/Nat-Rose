@@ -1,0 +1,359 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+/*
+@font-face {
+    font-family: Avenir;
+    src: url('/res/AvenirLTStd-Light.otf'), url('/res/AvenirLTStd-Light.woff') format('woff'), url('/res/AvenirLTStd-Light.tff') format('truetype');
+}
+*/
+
+
+#mfPreviewBar{
+    display: none;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.controls {
+    position: fixed;
+    width: 100vw;
+    z-index: 20;
+    bottom: 20px;
+    left: 2vw;
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.controls>label {
+    width: 10vw;
+}
+
+.controls>input {
+    position: absolute;
+    left: 200px;
+    width: 50px;
+}
+
+.homepageLayer1 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    width: 96.16vw;
+    height: 194.88vh;
+    margin: 2.56vh 1.92vw 2.56vh 1.92vw;
+    border-color: #D9D9D9;
+    border-style: solid;
+    border: 5px 5px 5px 5px;
+}
+
+.homepageLayer2 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #F4F5F8;
+    width: 94.06vw;
+    height: 190.58vh;
+    margin: 2.15vh 1.05vw 2.15vh 1.05vw;
+}
+
+nav {
+    font-family: 'Avenir 55 Roman', sans-serif;
+    font-size: 1.4vw;
+}
+
+.nav_flex {
+    display: flex;
+    flex-basis: 0;
+    justify-content: space-between;
+    margin-top: 4.45vh;
+    margin-left: 9.5vw;
+    margin-right: 9.5vw;
+    height: 16.03vh;
+    max-height: 10.25vw;
+}
+
+.nav_flex_div0 {
+    width: 6vw;
+    position: relative;
+    border-bottom: 0.1vw solid black;
+    /*margin-bottom: 5vh;*/
+    transform: translateY(-45%);
+}
+
+.nav_flex_div0:hover {
+    position: relative;
+    border-bottom: 0.1vw solid #928F1B;
+    /*margin-bottom: 5vh;*/
+    color: #928F1B;
+}
+
+.nav_flex_div1 {
+    width: 6vw;
+    position: relative;
+    border-bottom: 0.1vw solid black;
+    /*margin-bottom: 5vh;*/
+    transform: translateY(-45%);
+}
+
+.nav_flex_div1:hover {
+    position: relative;
+    border-bottom: 0.1vw solid #928F1B;
+    /*margin-bottom: 5vh;*/
+    color: #928F1B;
+}
+
+.nav_flex_div0 span {
+    position: absolute;
+    bottom: 1vh;
+}
+
+.nav_flex_div1 span {
+    position: absolute;
+    right: 0;
+    bottom: 1vh;
+}
+
+.logo {
+    width: 10vw;
+    height: auto;
+}
+
+.logoImage {
+    width: 100%;
+    height: auto;
+    color: black;
+}
+
+.tuneIn {
+    position: absolute;
+    margin-top: 11.88vh;
+    font-family: 'Avenir 55 Roman', sans-serif;
+    font-size: 3.91vw;
+    text-align: center;
+    width: 100%;
+}
+
+
+/*https://www.imgonline.com.ua/eng/impose-picture-on-another-picture-result.php*/
+
+.octagons_flex {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    margin-top: 40vh;
+    margin-left: 20.8vw;
+    margin-right: 20.8vw;
+}
+
+.octagons_flex_div {
+    position: relative;
+    margin-left: 4.91vw;
+    margin-right: 4.91vw;
+    align-content: center;
+}
+
+.octagons_flex_div:hover:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 3.83vw;
+    height: 0.11vw;
+    background: #928F1B;
+    margin-left: 3.81vw;
+    margin-bottom: 0.91vh;
+}
+
+.octagons_flex_div:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 3.83vw;
+    height: 0.11vw;
+    background: black;
+    margin-left: 3.81vw;
+    margin-bottom: 0.91vh;
+}
+
+.octagon_img {
+    position: relative;
+    width: 11.45vw;
+    height: auto;
+    z-index: 1;
+}
+
+.ping_img {
+    position: absolute;
+    height: 6vw;
+    width: auto;
+    top: -0.91vh;
+    bottom: 0.91vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+#octagon_img1{
+    top: -1.25vw;
+    left: -0.25vw;
+    height: 7.5vw;
+}
+
+#octagon_img2{
+    top: -1.25vw;
+    left: 0.15vw;
+    height: 5vw;
+}
+
+#octagon_img3{
+    top: -1.25vw;
+    left: -0.8vw;
+    height: 7.5vw;
+}
+
+.come {
+    position: absolute;
+    top: 103.95vh;
+    font-family: 'Avenir 55 Roman', sans-serif;
+    font-size: 1.6vw;
+    text-align: center;
+    width: 100%;
+    font-weight: normal;
+}
+
+.circle_flex {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    margin-top: 44.44vh;
+    margin-left: 22.07vw;
+    margin-right: 22.07vw;
+}
+
+.circle_flex_div {
+    position: relative;
+    margin-left: 3.9vw;
+    margin-right: 3.9vw;
+    align-content: center;
+}
+
+.intercircle {
+    margin-left: -1.39vw;
+    margin-right: 2.5vw;
+}
+
+.circle_img {
+    width: 9.6vw;
+    height: auto;
+}
+
+.circle_text {
+    position: absolute;
+    display: block;
+    color: white;
+    font-family: 'Avenir 55 Roman', sans-serif;
+    font-size: 1.1vw;
+    text-align: center;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.intercircle:after {
+    content: '';
+    width: 3.83vw;
+    height: 0.11vw;
+    background: #928F1B;
+    position: absolute;
+    margin-top: 4.75vw;
+}
+
+.circle_flex_div:hover:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 3.83vw;
+    height: 0.11vw;
+    background: #928F1B;
+    margin-left: 2.885vw;
+    margin-bottom: 0.91vh;
+}
+
+.circle_flex_div:after {
+    content: '';
+    position: relative;
+    display: inline-block;
+    width: 3.83vw;
+    height: 0.11vw;
+    background: black;
+    margin-left: 2.885vw;
+    margin-bottom: 0.91vh;
+}
+
+.circle_flex_div:before {
+    content: 'FIND\AOUT MORE';
+    font-family: 'Avenir 55 Roman', sans-serif;
+    white-space: pre;
+    text-align: center;
+    font-size: 1.4vw;
+    width: 9.6vw;
+    position: absolute;
+    margin-top: 11.7vw;
+}
+
+.circle_flex_div:hover:before {
+    content: 'FIND\AOUT MORE';
+    font-family: 'Avenir 55 Roman', sans-serif;
+    white-space: pre;
+    text-align: center;
+    font-size: 1.4vw;
+    width: 9.6vw;
+    position: absolute;
+    margin-top: 11.7vw;
+    color: #928F1B;
+}
+
+.arrowBack {
+    display: none;
+    position: fixed;
+    content: url(res/roundedRectangleGreen.png);    
+    bottom: 31.7vh;
+    right: 1.87vw;
+    width: 2.33vw;
+    height: 2.69vw;
+}
+
+.arrow {
+    display: none;
+    position: fixed;
+    content: url(res/arrow4.png);
+    color: white;
+    bottom: 32.8vh;
+    right: 2.32vw;
+    width: 1.31vw;
+    height: 1.51vw;
+    z-index: 2;
+}
+
+footer {
+    position: absolute;
+    text-align: center;
+    font-family: 'Avenir 55 Roman', sans-serif;
+    font-size: 0.83vw;
+    right: 0;
+    left: 0;
+    bottom: 2.25vh;
+}

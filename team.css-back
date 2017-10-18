@@ -1,0 +1,338 @@
+.nav_flex:not(:hover) .nav_flex_div1:nth-child(6) {
+    border-color: #928F1B;
+    color: #928F1B;
+}
+
+.thePlanet {
+    position: relative;
+    text-align: center;
+    font-size: 1.38vw;
+    font-weight: normal;
+    top: 16.11vh;
+    margin: 0 auto;
+}
+
+.silhouettes_flex {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    margin-top: 18.23vh;
+    margin-left: 20.5vw;
+    margin-right: 20.5vw;
+}
+
+.silhouettes_flex_div {
+    position: relative;
+    margin-left: 1.84vw;
+    margin-right: 1.84vw;
+    align-content: center;
+    font-size: 1.38vw;
+    cursor: pointer;
+}
+
+
+/*
+#silhouette1:hover {
+    content: url(res/team/NATALIEGreen.png);
+}
+
+#silhouette2:hover {
+    content: url(res/team/BENGreen.png);
+}
+
+#silhouette3:hover {
+    content: url(res/team/DANIGreen.png);
+}
+
+#silhouette4:hover {
+    content: url(res/team/QUESTION%20MARKGreen.png);
+}
+
+#silhouette5:hover {
+    content: url(res/team/PAGEGreen.png);
+}
+*/
+
+.silhouettes_flex_div:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 3.55vw;
+    height: 2px;
+    background: black;
+    margin-left: 1.78vw;
+    margin-bottom: 0.91vh;
+    top: 2.24vh;
+}
+
+.silhouettes_flex_div:hover:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 3.55vw;
+    height: 2px;
+    background: #928F1B;
+    margin-left: 1.78vw;
+    top: 2.24vh;
+}
+
+
+/*
+.silhouettes_flex_div:nth-child(1):before {
+    content: 'NATALIE';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+}
+
+.silhouettes_flex_div:nth-child(1):hover:before {
+    content: 'NATALIE';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+    color: #928F1B;
+}
+
+.silhouettes_flex_div:nth-child(2):before {
+    content: 'BEN';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+}
+
+.silhouettes_flex_div:nth-child(2):hover:before {
+    content: 'BEN';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+    color: #928F1B;
+}
+
+.silhouettes_flex_div:nth-child(3):before {
+    content: 'DANI';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+}
+
+.silhouettes_flex_div:nth-child(3):hover:before {
+    content: 'DANI';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+    color: #928F1B;
+}
+
+.silhouettes_flex_div:nth-child(4):before {
+    content: 'NICK';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+}
+
+.silhouettes_flex_div:nth-child(4):hover:before {
+    content: 'NICK';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+    color: #928F1B;
+}
+
+.silhouettes_flex_div:nth-child(5):before {
+    content: 'PAGE';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+}
+
+.silhouettes_flex_div:nth-child(5):hover:before {
+    content: 'PAGE';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+    color: #928F1B;
+}*/
+
+.silhouettes_img {
+    position: relative;
+    width: 7vw;
+    height: auto;
+    z-index: 1;
+}
+
+#silhouette1 {
+    top: 1.79vw;
+    left: 0vw;
+}
+
+#silhouette2 {
+    top: 1.91vw;
+    left: 0.41vw;
+}
+
+#silhouette3 {
+    top: 1.74vw;
+    left: 0.38vw;
+}
+
+
+/*
+.silhouettes_flex_div:nth-child(3):after {
+    top: 2.53vh;
+}
+*/
+
+#silhouette4 {
+    top: 1.87vw;
+    left: 0.33vw;
+}
+
+#silhouette5 {
+    top: 1.84vw;
+    left: 0vw;
+}
+
+.silhouettes2_flex {
+    display: flex;
+    flex-basis: auto;
+    justify-content: center;
+    margin-top: 6.74vh;
+    margin-left: 20.5vw;
+    margin-right: 20.5vw;
+}
+
+.silhouettes2_flex_div {
+    position: relative;
+    margin-left: 1.84vw;
+    margin-right: 1.84vw;
+    align-content: center;
+    font-size: 1.38vw;
+    cursor: pointer;
+}
+
+.silhouettes2_flex_div:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 3.55vw;
+    height: 2px;
+    background: black;
+    margin-left: 2.1vw;
+    margin-bottom: 0.91vh;
+    top: 0.28vh;
+}
+
+.silhouettes2_flex_div:hover:after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 3.55vw;
+    height: 2px;
+    background: #928F1B;
+    margin-left: 2.1vw;
+    margin-bottom: 0.91vh;
+    top: 0.28vh;
+}
+
+
+/*
+.silhouettes2_flex_div:nth-child(1):before {
+    content: 'JOHN';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+}
+
+.silhouettes2_flex_div:nth-child(1):hover:before {
+    content: 'JOHN';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+    color: #928F1B;
+}
+
+.silhouettes2_flex_div:nth-child(2):before {
+    content: 'NANOO';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+}
+
+.silhouettes2_flex_div:nth-child(2):hover:before {
+    content: 'NANOO';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+    color: #928F1B;
+}
+
+.silhouettes2_flex_div:nth-child(3):before {
+    content: 'SIMON';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+}
+
+.silhouettes2_flex_div:nth-child(3):hover:before {
+    content: 'SIMON';
+    
+    text-align: center;
+    width: 4.89vw;
+    position: absolute;
+    margin-top: 6.1vw;
+    color: #928F1B;
+}*/
+
+#silhouette21 {
+    top: 0.13vw;
+    left: 0.5vw;
+}
+
+#silhouette22 {
+    top: 0.17vw;
+    left: 0.37vw;
+}
+
+#silhouette23 {
+    top: 0.04vw;
+    left: 0.61vw;
+}
+
+.letsWork {
+    position: relative;
+    text-align: center;
+    font-weight: normal;
+    top: 2.67vh;
+    margin: 0 auto;
+    font-size: 1.11vw;
+}

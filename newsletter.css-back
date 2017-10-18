@@ -1,0 +1,20 @@
+
+article {
+    position: absolute;
+    
+    font-size: 1.01vw;
+    text-align: justify;
+    top: 49.75vh;
+    left: 15.66vw;
+    width: 62.55vw;
+}
+
+
+article * {
+    
+}
+
+p {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}

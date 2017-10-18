@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<link rel="stylesheet" href="styles.css" />
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <script src="controls.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body onscroll="onScroll(this);">
+    <div class="controls">
+        <label>Nav: height</label>
+        <input id="navHeight" type="number" step="0.01" onchange="navHeight(this)" /><br/>
+        <!-- done -->
+        <label>Nav: margin top</label>
+        <input id="navMarginTop" type="number" step="0.01" onchange="navMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Nav: margins l/r</label>
+        <input id="navMargins" type="number" step="0.01" onchange="navMargins(this)" /><br/>
+        <!-- done -->
+        <label>Nav: font</label>
+        <input id="navFont" type="number" step="0.01" onchange="navFont(this)" /><br/>
+        <!-- done -->
+        <label>Logo: size</label>
+        <input id="navLogoSize" type="number" step="0.01" onchange="navLogoSize(this)" /><br/>
+        <!-- done -->
+        <label>Nav item: width</label>
+        <input id="navDivWidth" type="number" step="0.01" onchange="navDivWidth(this)" /><br/>
+        <!-- done -->
+        <label>Tune into: margin top </label>
+        <input id="tuneMarginTop" type="number" step="0.01" onchange="tuneMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Tune into: font size </label>
+        <input id="tuneFontSize" type="number" step="0.01" onchange="tuneFontSize(this)" /><br/>
+        <!-- done -->
+        <label>Octagons: margin top </label>
+        <input id="octagonsMarginTop" type="number" step="0.01" onchange="octagonsMarginTop(this)" /><br/>
+        <label>Octagons: margins l/r </label>
+        <input id="octagonsMargins" type="number" step="0.01" onchange="octagonsMargins(this)" /><br/>
+        <!-- done -->
+        <label>Octagon: margins l/r </label>
+        <input id="octagonMargins" type="number" step="0.01" onchange="octagonMargins(this)" /><br/>
+        <!-- done -->
+        <label>Octagon: size </label>
+        <input id="octagonSize" type="number" step="0.01" onchange="octagonSize(this)" /><br/>
+        <!-- done -->
+        <!-- done -->
+        <label>Pings: margin top </label>
+        <input id="pingsMarginTop" type="number" step="0.01" onchange="pingsMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Pings: margin bottom </label>
+        <input id="pingsMarginBottom" type="number" step="0.01" onchange="pingsMarginBottom(this)" /><br/>
+        <!-- done -->
+        <label>Pings: margin left </label>
+        <input id="pingsMarginLeft" type="number" step="0.01" onchange="pingsMarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Pings: margin right </label>
+        <input id="pingsMarginRight" type="number" step="0.01" onchange="pingsMarginRight(this)" /><br/>
+        <!-- done -->
+        <label>Pings: height </label>
+        <input id="pingsHeight" type="number" step="0.01" onchange="pingsHeight(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping1: margin top </label>
+        <input id="ping1MarginTop" type="number" step="0.01" onchange="ping1MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping1: margin left </label>
+        <input id="ping1MarginLeft" type="number" step="0.01" onchange="ping1MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping1: height </label>
+        <input id="ping1Height" type="number" step="0.01" onchange="ping1Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping2: margin top </label>
+        <input id="ping2MarginTop" type="number" step="0.01" onchange="ping2MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping2: margin left </label>
+        <input id="ping2MarginLeft" type="number" step="0.01" onchange="ping2MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping2: height </label>
+        <input id="ping2Height" type="number" step="0.01" onchange="ping2Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping3: margin top </label>
+        <input id="ping3MarginTop" type="number" step="0.01" onchange="ping3MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping3: margin left </label>
+        <input id="ping3MarginLeft" type="number" step="0.01" onchange="ping3MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping3: height </label>
+        <input id="ping3Height" type="number" step="0.01" onchange="ping3Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Come text: margin top</label>
+        <input id="comeMarginTop" type="number" step="0.01" onchange="comeMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Come text: font size</label>
+        <input id="comeFontSize" type="number" step="0.01" onchange="comeFontSize(this)" /><br/>
+        <!-- done -->
+        <label>Circles: margin top </label>
+        <input id="circlesMarginTop" type="number" step="0.01" onchange="circlesMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Circles: margins l/r </label>
+        <input id="circlesMargins" type="number" step="0.01" onchange="circlesMargins(this)" /><br/>
+        <!-- done -->
+        <label>Circle: margins l/r </label>
+        <input id="circleMargins" type="number" step="0.01" onchange="circleMargins(this)" /><br/>
+        <!-- done -->
+        <label>Circle: size </label>
+        <input id="circleSize" type="number" step="0.01" onchange="circleSize(this)" /><br/>
+        <!-- done -->
+        <label>Circle text: margin top </label>
+        <input id="circleTextMarginTop" type="number" step="0.01" onchange="circleTextMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Circle text: font size </label>
+        <input id="circleTextFontSize" type="number" step="0.01" onchange="circleTextFontSize(this)" /><br/>
+        <!-- done -->
+        <label>Footer: margin bottom </label>
+        <input id="footerMarginBottom" type="number" step="0.01" onchange="footerMarginBottom(this)" /><br/>
+        <!-- done -->
+        <label>Footer: font size </label>
+        <input id="footerFontSize" type="number" step="0.01" onchange="footerFontSize(this)" /><br/>
+        <!-- done -->
+        <label>Arrow: width </label>
+        <input id="arrowWidth" type="number" step="0.01" onchange="arrowWidth(this)" /><br/>
+        <!-- done -->
+        <label>Arrow: height </label>
+        <input id="arrowHeight" type="number" step="0.01" onchange="arrowHeight(this)" /><br/>
+        <!-- done -->
+    </div>
+    <script>
+        document.getElementById("navHeight").value = 16.03;
+        document.getElementById("navMarginTop").value = 4.45;
+        document.getElementById("navMargins").value = 9.5;
+        document.getElementById("navFont").value = 1.4;
+        document.getElementById("navLogoSize").value = 10.25;
+        document.getElementById("navDivWidth").value = 6;
+        document.getElementById("tuneMarginTop").value = 11.88;
+        document.getElementById("tuneFontSize").value = 3.6;
+        document.getElementById("octagonsMarginTop").value = 40;
+        document.getElementById("octagonsMargins").value = 20.8;
+        document.getElementById("octagonMargins").value = 4.91;
+        document.getElementById("pingsMarginTop").value = -0.91;
+        document.getElementById("pingsMarginBottom").value = 0.91;
+        document.getElementById("pingsMarginRight").value = 0;
+        document.getElementById("pingsMarginLeft").value = 0;
+        document.getElementById("pingsHeight").value = 6;
+        //
+        document.getElementById("ping1MarginTop").value = -1.25;
+        document.getElementById("ping1MarginLeft").value = -0.12;
+        document.getElementById("ping1Height").value = 7.5;
+        //
+        document.getElementById("ping2MarginTop").value = -1.25;
+        document.getElementById("ping2MarginLeft").value = 0.15;
+        document.getElementById("ping2Height").value = 5;
+        //
+        document.getElementById("ping3MarginTop").value = -1.25;
+        document.getElementById("ping3MarginLeft").value = -0.59;
+        document.getElementById("ping3Height").value = 7.5;
+        //
+        document.getElementById("octagonSize").value = 14;
+        document.getElementById("comeMarginTop").value = 107;
+        document.getElementById("comeFontSize").value = 1.7;
+        document.getElementById("circlesMarginTop").value = 44.44;
+        document.getElementById("circlesMargins").value = 22.7;
+        document.getElementById("circleMargins").value = 5;
+        document.getElementById("circleSize").value = 11.11;
+        document.getElementById("circleTextMarginTop").value = 46;
+        document.getElementById("circleTextFontSize").value = 1.1;
+        document.getElementById("footerMarginBottom").value = 0.43;
+        document.getElementById("footerFontSize").value = 1.1;
+        document.getElementById("arrowWidth").value = 2.26;
+        document.getElementById("arrowHeight").value = 2.26;
+
+    </script>
+    <div class="homepageLayer1">
+        <div class="homepageLayer2">
+            <nav class="nav_flex">
+                <div class="nav_flex_div0">
+                    <span>Home</span>
+                </div>
+                <div class="nav_flex_div0">
+                    <span>About</span>
+                </div>
+                <div class="nav_flex_div0">
+                    <span>Mission</span>
+                </div>
+                <div class="logo">
+                    <img class="logoImage" src="res/logo.png" />
+                </div>
+                <div class="nav_flex_div1">
+                    <span>Services</span>
+                </div>
+                <div class="nav_flex_div1">
+                    <span>Team</span>
+                </div>
+                <div class="nav_flex_div1">
+                    <span>Contact</span>
+                </div>
+            </nav>
+            <h1 class="tuneIn">
+                <span style="color: #928F1B">TUNE</span> INTO A NEW
+                <pre></pre>WAY OF LIVING!
+            </h1>
+            <div class="octagons_flex">
+                <div class="octagons_flex_div">
+                    <img class="octagon_img" src="res/octagon.png" />
+                    <img id="octagon_img1" class="ping_img" src="res/cycle_blck_bg_copy.png" />
+                </div>
+                <div class="octagons_flex_div">
+                    <img class="octagon_img" src="res/octagon.png" />
+                    <img id="octagon_img2" class="ping_img" src="res/corn_copy-1.png" />
+                </div>
+                <div class="octagons_flex_div">
+                    <img class="octagon_img" src="res/octagon.png" />
+                    <img id="octagon_img3" class="ping_img" src="res/wind_mill_copy-3.png" />
+                </div>
+            </div>
+
+            <h1 class="come">
+                COME & JOIN OUR GROWING COMMUNITY & HELP
+                <pre></pre>GENERATIONS TO COME!
+            </h1>
+            <div class="circle_flex">
+                <div class="circle_flex_div">
+                    <span class="circle_text">VOLUNTEER</span>
+                    <img class="circle_img" src="res/circle.png" />
+                </div>
+                <div class="intercircle">
+                </div>
+                <div class="circle_flex_div">
+                    <span class="circle_text">EMAIL</span>
+                    <img class="circle_img" src="res/circleGreen.png" />
+                </div>
+                <div class="intercircle">
+                </div>
+                <div class="circle_flex_div">
+                    <span class="circle_text">NEWSLETTER</span>
+                    <img class="circle_img" src="res/circle.png" />
+                </div>
+            </div>
+            <img id="arrowScroll" class="arrow" onclick="scrollUp(this);" />
+            <footer>
+                Copyright &copy; 2017 Built by ???Limited. All rights reserved.
+                <pre></pre>Registered in England Company No. ??? VAT Registration No. ???
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

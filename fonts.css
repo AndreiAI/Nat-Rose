@@ -1,0 +1,35 @@
+@font-face {
+    font-family: AvenirHeavy;
+    src: url('https://justjordas.000webhostapp.com/natrose/res/fonts/Avenir-Heavy.eot');
+    src: url('https://justjordas.000webhostapp.com/natrose/res/fonts/Avenir-Heavy.woff') format('woff'), url('https://justjordas.000webhostapp.com/natrose/res/fonts/Avenir-Heavy.tff') format('truetype');
+}
+
+@font-face {
+    font-family: AvenirBook;
+    src: url('https://justjordas.000webhostapp.com/natrose/res/fonts/Avenir-Book.eot');
+    src: url('https://justjordas.000webhostapp.com/natrose/res/fonts/Avenir-Book.woff') format('woff'), url('https://justjordas.000webhostapp.com/natrose/res/fonts/Avenir-Book.tff') format('truetype');
+}
+
+* {
+    font-family: AvenirBook, sans-serif;
+}
+
+h1 {
+    font-family: AvenirHeavy, sans-serif;
+}
+
+h1 * {
+    font-family: AvenirHeavy, sans-serif;
+}
+
+article {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+article * {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    font-family: AvenirBook, sans-serif;
+}

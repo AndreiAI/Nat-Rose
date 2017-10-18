@@ -1,0 +1,19 @@
+.controls {
+    position: fixed;
+    width: 100vw;
+    z-index: 20;
+    bottom: 20px;
+    left: 2vw;
+    max-height: 45.0vw;
+    overflow-y: scroll;
+}
+
+.controls>label {
+    width: 10vw;
+}
+
+.controls>input {
+    position: absolute;
+    left: 270px;
+    width: 50px;
+}

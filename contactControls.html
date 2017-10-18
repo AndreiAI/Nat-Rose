@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="twoPage.css" />
+    <link rel="stylesheet" href="navBar.css" />
+    <link rel="stylesheet" href="arrowScroll.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="controls.css" />
+    <script type="text/javascript" src="contactControls.js"></script>
+    <script type="text/javascript" src="scroll.js"></script>
+</head>
+
+<body onscroll="onScroll(this);">
+    <div class="controls">
+        <label>Contact us: top </label>
+        <input id="contactUsTop" type="number" step="0.01" onchange="contactUsTop(this)" /><br/>
+        <!-- done -->
+        <label>To find: top </label>
+        <input id="toFindTop" type="number" step="0.01" onchange="toFindTop(this)" /><br/>
+        <!-- done -->
+        <label>Tune into: font size </label>
+        <input id="toFindFontSize" type="number" step="0.01" onchange="toFindFontSize(this)" /><br/>
+        <!-- done -->
+        <label>Circles: margin top </label>
+        <input id="circlesMarginTop" type="number" step="0.01" onchange="circlesMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Circles: margins l/r </label>
+        <input id="circlesMargins" type="number" step="0.01" onchange="circlesMargins(this)" /><br/>
+        <!-- done -->
+        <label>Circle: margins l/r </label>
+        <input id="circleMargins" type="number" step="0.01" onchange="circleMargins(this)" /><br/>
+        <!-- done -->
+        <label>Circle: size </label>
+        <input id="circleSize" type="number" step="0.01" onchange="circleSize(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping1: margin top </label>
+        <input id="ping1MarginTop" type="number" step="0.01" onchange="ping1MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping1: margin left </label>
+        <input id="ping1MarginLeft" type="number" step="0.01" onchange="ping1MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping1: height </label>
+        <input id="ping1Height" type="number" step="0.01" onchange="ping1Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping2: margin top </label>
+        <input id="ping2MarginTop" type="number" step="0.01" onchange="ping2MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping2: margin left </label>
+        <input id="ping2MarginLeft" type="number" step="0.01" onchange="ping2MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping2: height </label>
+        <input id="ping2Height" type="number" step="0.01" onchange="ping2Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping3: margin top </label>
+        <input id="ping3MarginTop" type="number" step="0.01" onchange="ping3MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping3: margin left </label>
+        <input id="ping3MarginLeft" type="number" step="0.01" onchange="ping3MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping3: height </label>
+        <input id="ping3Height" type="number" step="0.01" onchange="ping3Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping4: margin top </label>
+        <input id="ping4MarginTop" type="number" step="0.01" onchange="ping4MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping4: margin left </label>
+        <input id="ping4MarginLeft" type="number" step="0.01" onchange="ping4MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping4: height </label>
+        <input id="ping4Height" type="number" step="0.01" onchange="ping4Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping5: margin top </label>
+        <input id="ping5MarginTop" type="number" step="0.01" onchange="ping5MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping5: margin left </label>
+        <input id="ping5MarginLeft" type="number" step="0.01" onchange="ping5MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping5: height </label>
+        <input id="ping5Height" type="number" step="0.01" onchange="ping5Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping6: margin top </label>
+        <input id="ping6MarginTop" type="number" step="0.01" onchange="ping6MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping6: margin left </label>
+        <input id="ping6MarginLeft" type="number" step="0.01" onchange="ping6MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping6: height </label>
+        <input id="ping6Height" type="number" step="0.01" onchange="ping6Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Ping7: margin top </label>
+        <input id="ping7MarginTop" type="number" step="0.01" onchange="ping7MarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Ping7: margin left </label>
+        <input id="ping7MarginLeft" type="number" step="0.01" onchange="ping7MarginLeft(this)" /><br/>
+        <!-- done -->
+        <label>Ping7: height </label>
+        <input id="ping7Height" type="number" step="0.01" onchange="ping7Height(this)" /><br/>
+        <!-- done -->
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <label>Your Details Div: top </label>
+        <input id="yourDetailsDivTop" type="number" step="0.01" onchange="yourDetailsDivTop(this)" /><br/>
+        <!-- done -->
+        <label>Your Details: margin top </label>
+        <input id="yourDetailsMarginTop" type="number" step="0.01" onchange="yourDetailsMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Your Details: margins l/r </label>
+        <input id="yourDetailsMargins" type="number" step="0.01" onchange="yourDetailsMargins(this)" /><br/>
+        <!-- done -->
+        <label>Your Detail: margins l/r </label>
+        <input id="yourDetailMargins" type="number" step="0.01" onchange="yourDetailMargins(this)" /><br/>
+        <!-- done -->
+        <label>Your Detail: width </label>
+        <input id="yourDetailWidth" type="number" step="0.01" onchange="yourDetailWidth(this)" /><br/>
+        <!-- done -->
+        <label>Your Detail: height </label>
+        <input id="yourDetailHeight" type="number" step="0.01" onchange="yourDetailHeight(this)" /><br/>
+        <!-- done -->
+        <label>Type Enquiry Div: top </label>
+        <input id="typeEnquirysDivTop" type="number" step="0.01" onchange="typeEnquirysDivTop(this)" /><br/>
+        <!-- done -->
+        <label>Type Enquirys: margin top </label>
+        <input id="typeEnquirysMarginTop" type="number" step="0.01" onchange="typeEnquirysMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Type Enquirys: margins l/r </label>
+        <input id="typeEnquirysMargins" type="number" step="0.01" onchange="typeEnquirysMargins(this)" /><br/>
+        <!-- done -->
+        <label>Type Enquiry: margins l/r </label>
+        <input id="typeEnquiryMargins" type="number" step="0.01" onchange="typeEnquiryMargins(this)" /><br/>
+        <!-- done -->
+        <label>Type Enquiry: width </label>
+        <input id="typeEnquiryWidth" type="number" step="0.01" onchange="typeEnquiryWidth(this)" /><br/>
+        <!-- done -->
+        <label>Type Enquiry: height </label>
+        <input id="typeEnquiryHeight" type="number" step="0.01" onchange="typeEnquiryHeight(this)" /><br/>
+        <!-- done -->
+        <label>Brief Description Div: top </label>
+        <input id="briefDescriptionDivTop" type="number" step="0.01" onchange="briefDescriptionDivTop(this)" /><br/>
+        <!-- done -->
+        <label>Brief Description Rectangle: margin top </label>
+        <input id="briefDescriptionMarginTop" type="number" step="0.01" onchange="briefDescriptionMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>Brief Description Rectangle: Width </label>
+        <input id="briefDescriptionRectangleWidth" type="number" step="0.01" onchange="briefDescriptionRectangleWidth(this)" /><br/>
+        <!-- done -->
+        <label>Brief Description Rectangle: Height </label>
+        <input id="briefDescriptionRectangleHeight" type="number" step="0.01" onchange="briefDescriptionRectangleHeight(this)" /><br/>
+        <!-- done -->
+        <label>Click Submit: top </label>
+        <input id="clickSubmitTop" type="number" step="0.01" onchange="clickSubmitTop(this)" /><br/>
+        <!-- done -->
+        <label>Click Submit Rectangle: Width </label>
+        <input id="clickSubmitRectangleWidth" type="number" step="0.01" onchange="clickSubmitRectangleWidth(this)" /><br/>
+        <!-- done -->
+        <label>Click Submit Rectangle: Height </label>
+        <input id="clickSubmitRectangleHeight" type="number" step="0.01" onchange="clickSubmitRectangleHeight(this)" /><br/>
+        <!-- done -->
+    </div>
+    <script>
+        document.getElementById("contactUsTop").value = 14.06;
+        document.getElementById("toFindTop").value = 10.04;
+        document.getElementById("toFindFontSize").value = 1.38;
+        document.getElementById("circlesMarginTop").value = 13.74;
+        document.getElementById("circlesMargins").value = 22.07;
+        document.getElementById("circleMargins").value = 1.4;
+        document.getElementById("circleSize").value = 8.3;
+        //
+        document.getElementById("ping1MarginTop").value = -1.56;
+        document.getElementById("ping1MarginLeft").value = 0.05;
+        document.getElementById("ping1Height").value = 1.94;
+        //
+        document.getElementById("ping2MarginTop").value = -1.62;
+        document.getElementById("ping2MarginLeft").value = 0;
+        document.getElementById("ping2Height").value = 3.27;
+        //
+        document.getElementById("ping3MarginTop").value = -1.42;
+        document.getElementById("ping3MarginLeft").value = 0;
+        document.getElementById("ping3Height").value = 2.6;
+        //
+        document.getElementById("ping4MarginTop").value = -1.82;
+        document.getElementById("ping4MarginLeft").value = 0.3;
+        document.getElementById("ping4Height").value = 3.8;
+        //
+        document.getElementById("ping5MarginTop").value = -1.82;
+        document.getElementById("ping5MarginLeft").value = 0;
+        document.getElementById("ping5Height").value = 4.11;
+        //
+        document.getElementById("ping6MarginTop").value = -1.63;
+        document.getElementById("ping6MarginLeft").value = 0.11;
+        document.getElementById("ping6Height").value = 2.5;
+        //
+        document.getElementById("ping7MarginTop").value = -1.62;
+        document.getElementById("ping7MarginLeft").value = 0;
+        document.getElementById("ping7Height").value = 2.67;
+        //
+        document.getElementById("yourDetailsDivTop").value = -2.44;        document.getElementById("yourDetailsMarginTop").value = 1.24;
+        document.getElementById("yourDetailsMargins").value = 16.07;
+        document.getElementById("yourDetailMargins").value = 1.78;
+        document.getElementById("yourDetailWidth").value = 17.7;
+        document.getElementById("yourDetailHeight").value = 3.6;
+        document.getElementById("typeEnquirysDivTop").value = 1.24;
+        document.getElementById("typeEnquirysMarginTop").value = 1.37;
+        document.getElementById("typeEnquirysMargins").value = 16.07;
+        document.getElementById("typeEnquiryMargins").value = 1.78;
+        document.getElementById("typeEnquiryWidth").value = 17.7;
+        document.getElementById("typeEnquiryHeight").value = 3.6;
+        //
+        document.getElementById("briefDescriptionDivTop").value = -1.90;
+        document.getElementById("briefDescriptionMarginTop").value = 1.30;
+        document.getElementById("briefDescriptionRectangleWidth").value = 64.86;
+        document.getElementById("briefDescriptionRectangleHeight").value = 21.04;
+        document.getElementById("clickSubmitTop").value = 12.94;
+        document.getElementById("clickSubmitRectangleWidth").value = 17.88;
+        document.getElementById("clickSubmitRectangleHeight").value = 3.69;
+
+    </script>
+    <div class="homepageLayer1">
+        <div class="homepageLayer2">
+            <nav class="nav_flex">
+                <div class="nav_flex_div0">
+                    <a href="."><span>Home</span></a>
+                </div>
+                <div class="nav_flex_div0">
+                    <a href="about.html"><span>About</span></a>
+                </div>
+                <div class="nav_flex_div0">
+                    <a href="mission.html"><span>Mission</span></a>
+                </div>
+                <div class="logo">
+                    <img class="logoImage" src="res/logo.png" />
+                </div>
+                <div class="nav_flex_div1">
+                    <a href="services.html"><span>Services</span></a>
+                </div>
+                <div class="nav_flex_div1">
+                    <a href="team.html"><span>Team</span></a>
+                </div>
+                <div class="nav_flex_div1">
+                    <a href="contact.html"><span>Contact</span></a>
+                </div>
+            </nav>
+            <h1>
+                <span style="color: #928F1B">CONTACT</span> US
+            </h1>
+
+            <h2 class="toFind">
+                To find out more, please contact one of our team members who will be all too happy
+                <pre></pre>to help you with any questions you have.
+            </h2>
+            <div class="circle_flex">
+                <div class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img1" src="res/email.png" />
+                </div>
+                <div class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img2" src="res/phone.png" />
+                </div>
+                <div class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img3" src="res/twitter.png" />
+                </div>
+                <div class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img4" src="res/volunteer.png" />
+                </div>
+                <div class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img5" src="res/linkedin.png" />
+                </div>
+                <div class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img6" src="res/skype.png" />
+                </div>
+                <div class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img7" src="res/newsletter.png" />
+                </div>
+            </div>
+            <form>
+                <div class="yourDetails">
+                    <span class="yourDetails_header">YOUR DETAILS!</span>
+                    <div class="yourDetails_form_flex">
+                        <div class="yourDetails_form_flex_div">
+                            <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangle.png" />
+                            <input type="text" name="userName" placeholder="NAME" />
+                        </div>
+                        <div class="yourDetails_form_flex_div">
+                            <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangleGreen.png" />
+                            <input type="email" name="userEmail" placeholder="EMAIL ADDRESS" />
+                        </div>
+                        <div class="yourDetails_form_flex_div">
+                            <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangle.png" />
+                            <input type="tel" name="userPhone" placeholder="PHONE NUMBER" />
+                        </div>
+                    </div>
+                </div>
+                <div class="typeEnquiry">
+                    <span class="typeEnquiry_header">TYPE OF ENQUIRY!</span>
+                    <div class="typeEnquiry_form_flex">
+                        <div class="typeEnquiry_form_flex_div">
+                            <img class="typeEnquiry_form_flex_div_rectangle" src="res/roundedRectangle.png" />
+                            <span>COURSES</span>
+                        </div>
+                        <div class="typeEnquiry_form_flex_div">
+                            <img class="typeEnquiry_form_flex_div_rectangle" src="res/roundedRectangleGreen.png" />
+                            <span>TOURS</span>
+                        </div>
+                        <div class="typeEnquiry_form_flex_div">
+                            <img class="typeEnquiry_form_flex_div_rectangle" src="res/roundedRectangle.png" />
+                            <span>NEWSLETTER/OTHER</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="briefDescription">
+                    <span class="briefDescription_header">BRIEF DESCRIPTION OF YOUR ENQUIRY</span>
+                    <div class="briefDescription_form_div">
+                        <img class="briefDescription_form_div_rectangle" src="res/roundedRectangleBig.png" />
+                        <textarea class="briefDescription_form_div_textarea" name="description"></textarea>
+                    </div>
+                </div>
+                <div class="clickSubmit">
+                    <img class="clickSubmit_rectangle" src="res/roundedRectangleGreen.png" />
+                    <span>CLICK TO SUBMIT</span>
+                </div>
+            </form>
+            <img id="arrowScrollBack" class="arrowBack" onclick="scrollUp(this);" />
+            <!--
+            <img id="arrowScroll" class="arrow" onclick="scrollUp(this);" />
+            -->
+            <footer>
+                <span style="font-weight: bold;">'LIVE IN HARMONY'</span> IS DEDICATED TO THE MEMORY OF JAMES KING, MY GUARDIAN & INSPIRATION.
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

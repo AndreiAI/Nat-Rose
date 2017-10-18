@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="onePage.css" />
+    <link rel="stylesheet" href="navBar.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="controls.css" />
+    <script type="text/javascript" src=aboutControls.js></script>
+</head>
+
+<body>
+    <div class="controls">
+        <label>Header: top </label>
+        <input id="headerTop" type="number" step="0.01" onchange="headerTop(this)" /><br/>
+        <!-- done -->
+        <label>Header: font size </label>
+        <input id="headerFontSize" type="number" step="0.01" onchange="headerFontSize(this)" /><br/>
+        <!-- done -->
+        <label>Article: top</label>
+        <input id="articleTop" type="number" step="0.01" onchange="articleTop(this)" /><br/>
+        <!-- done -->
+        <label>Article: left</label>
+        <input id="articleLeft" type="number" step="0.01" onchange="articleLeft(this)" /><br/>
+        <!-- done -->
+        <label>Article: width</label>
+        <input id="articleWidth" type="number" step="0.01" onchange="articleWidth(this)" /><br/>
+        <!-- done -->
+        <label>Article: font size</label>
+        <input id="articleFontSize" type="number" step="0.01" onchange="articleFontSize(this)" /><br/>
+        <!-- done -->
+        <label>Paragraphs: margins t/b</label>
+        <input id="paragraphsMarginsTB" type="number" step="0.01" onchange="paragraphsMarginsTB(this)" /><br/>
+        <!-- done -->
+        <label>List: margin top</label>
+        <input id="listMarginTop" type="number" step="0.01" onchange="listMarginTop(this)" /><br/>
+        <!-- done -->
+        <label>List: padding left</label>
+        <input id="listPaddingLeft" type="number" step="0.01" onchange="listPaddingLeft(this)" /><br/>
+        <!-- done -->
+    </div>
+    <script>
+        document.getElementById("headerTop").value = 25;
+        document.getElementById("headerFontSize").value = 3.91;
+        document.getElementById("articleTop").value = 39.32;
+        document.getElementById("articleLeft").value = 15.66;
+        document.getElementById("articleWidth").value = 62.55;
+        document.getElementById("articleFontSize").value = 1.01;
+        document.getElementById("paragraphsMarginsTB").value = 2;
+        document.getElementById("listMarginTop").value = 0;
+        document.getElementById("listPaddingLeft").value = 0;
+
+    </script>
+    <div class="homepageLayer1">
+        <div class="homepageLayer2">
+            <nav class="nav_flex">
+                <div class="nav_flex_div0">
+                    <a href="."><span>Home</span></a>
+                </div>
+                <div class="nav_flex_div0">
+                    <a href=""><span>About</span></a>
+                </div>
+                <div class="nav_flex_div0">
+                    <span>Mission</span>
+                </div>
+                <div class="logo">
+                    <img class="logoImage" src="res/logo.png" />
+                </div>
+                <div class="nav_flex_div1">
+                    <span>Services</span>
+                </div>
+                <div class="nav_flex_div1">
+                    <span>Team</span>
+                </div>
+                <div class="nav_flex_div1">
+                    <span>Contact</span>
+                </div>
+            </nav>
+            <h1>
+                <span style="color: #928F1B">ABOUT</span> US
+            </h1>
+            <article>
+                <p>Live in Harmony (LIH) grew about from the need to create a system that works with the planet. We aim to create a lifestyle where people cycle, learn to grow food, make/source 'free' energy, mend/make clothing and keep bees. We believe life should be about learning, education and exploration, while achieving one's goals, but not at the expense of the planet and/or others. </p>
+                <p>We offer a range of free courses to educate people how to work with the planet by teaching about the environment, sustainability, permaculture and green energy. At LIH, we pride ourselves on giving back and understanding the importance of preserving our beautiful planet. </p>
+                <p>Our team has been carefully selected in order to offer you the best possible experience. We enjoy what we do and hope you will too! </p>
+                <p>Our team consists of but is not limited to:</p>
+                <ul>
+                    <li>Designers</li>
+                    <li>Cyclists</li>
+                    <li>Food Connoisseurs</li>
+                    <li>Environmentalists</li>
+                    <li>Animal Lovers</li>
+                    <li>Engineers</li>
+                </ul>
+            </article>
+        </div>
+    </div>
+</body>
+
+</html>

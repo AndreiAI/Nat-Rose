@@ -1,0 +1,32 @@
+article {
+    position: absolute;
+    
+    font-size: 1.01vw;
+    text-align: justify;
+    top: 22.1175vw;
+    left: 19.8vw;
+    width: 54.27vw;
+}
+
+article * {
+    
+}
+
+article > p {
+    margin-top: 1.125vw;
+    margin-bottom: 1.125vw;
+}
+
+.img1 {
+    margin-top: 1.125vw;
+    margin-bottom: 1.125vw;
+    width: 54.27vw;
+    height: 30.258vw;
+}
+
+.img2 {
+    margin-top: 1.125vw;
+    margin-bottom: 1.125vw;
+    width: 54.27vw;
+    height: 30.258vw;
+}

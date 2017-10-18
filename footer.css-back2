@@ -1,0 +1,8 @@
+footer {
+    position: absolute;
+    text-align: center;
+    font-size: 1.11vw;
+    right: 0;
+    left: 0;
+    bottom: 1.45077720207vw;
+}

@@ -1,0 +1,36 @@
+
+
+h1{
+    text-align: left;
+    left: 15.66vw;
+    font-size: 1.3vw;
+    font-family: AvenirBook;
+    top: 35vh;
+}
+
+
+h1 *{
+    text-align: left;
+    left: 15.66vw;
+    font-size: 1.3vw;
+    font-family: AvenirBook;
+}
+
+article {
+    position: absolute;
+    
+    font-size: 1.01vw;
+    text-align: justify;
+    top: 39.32vh;
+    left: 15.66vw;
+    width: 62.55vw;
+}
+
+article * {
+    
+}
+
+article > p {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}

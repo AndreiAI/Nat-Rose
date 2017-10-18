@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <link rel="stylesheet" href="twoPage.css" />
+    <link rel="stylesheet" href="navBar.css" />
+    <link rel="stylesheet" href="arrowScroll.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script type="text/javascript" src="scroll.js"></script>
+    <script type="text/javascript" src="contact.js"></script>
+
+</head>
+
+<body onscroll="onScroll(this);" onload="checkColorEnquiry(this);">
+    <div class="homepageLayer1">
+        <div class="homepageLayer2">
+            <nav class="nav_flex">
+                <div class="nav_flex_div0">
+                    <a href="."><span>Home</span></a>
+                </div>
+                <div class="nav_flex_div0">
+                    <a href="about.html"><span>About</span></a>
+                </div>
+                <div class="nav_flex_div0">
+                    <a href="mission.html"><span>Mission</span></a>
+                </div>
+                <div class="logo">
+                    <img class="logoImage" src="res/logo.png" />
+                </div>
+                <div class="nav_flex_div1">
+                    <a href="services.html"><span>Services</span></a>
+                </div>
+                <div class="nav_flex_div1">
+                    <a href="team.html"><span>Team</span></a>
+                </div>
+                <div class="nav_flex_div1">
+                    <a href="contact.html"><span>Contact</span></a>
+                </div>
+            </nav>
+            <h1>
+                <span style="color: #928F1B">CONTACT</span> US
+            </h1>
+
+            <h2 class="toFind">
+                To find out more, please contact one of our team members who will be all too happy
+                <pre></pre>to help you with any questions you have.
+            </h2>
+            <div class="circle_flex">
+                <div id="ping1" class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img1" src="res/email.png" />
+                    <div class='popup'>
+                        <div>hello@liveinharmony.co.uk</div>
+                        <svg height="50" width="100">
+                            <path d="M0 50 L40 0 L65 0 Z" />
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img2" src="res/phone.png" />
+                    <div class='popup'>
+                        <div>+44 (0)7792 512 984</div>
+                        <svg height="50" width="100">
+                            <path d="M0 50 L40 0 L65 0 Z" />
+                            Sorry, your browser does not support inline SVG.
+                        </svg>
+                    </div>
+                </div>
+                <div class="circle_flex_div">
+                    <a href="https://twitter.com/LiveInHarmony1" target="_blank">
+                        <img class="circle_img" src="res/circle.png" />
+                        <img class="circle_img_img" id="ping_img3" src="res/twitter.png" />
+                    </a>
+                </div>
+                <div class="circle_flex_div">
+                    <a href="volunteer.html">
+                        <img class="circle_img" src="res/circle.png" />
+                        <img class="circle_img_img" id="ping_img4" src="res/volunteer.png" />
+                    </a>
+                </div>
+                <div class="circle_flex_div">
+                    <img class="circle_img" src="res/circle.png" />
+                    <img class="circle_img_img" id="ping_img6" src="res/skype.png" />
+                    <div class='popup'>
+                        <div>Live In Harmony</div>
+                        <svg height="50" width="100">
+                            <path d="M0 50 L40 0 L65 0 Z" />
+                                Sorry, your browser does not support inline SVG.
+                            </svg>
+                    </div>
+                </div>
+
+                <div class="circle_flex_div">
+                    <a href="https://linkedin.com/in/natalie-rose-b91560146" target="_blank">
+                        <img class="circle_img" src="res/circle.png" />
+                        <img class="circle_img_img" id="ping_img5" src="res/linkedin.png" />
+                    </a>
+                </div>
+                <div class="circle_flex_div">
+                    <a href="newsletter.html">
+                        <img class="circle_img" src="res/circle.png" />
+                        <img class="circle_img_img" id="ping_img7" src="res/newsletter.png" />
+                    </a>
+                </div>
+            </div>
+            <form>
+                <div class="yourDetails">
+                    <span class="yourDetails_header">YOUR DETAILS!</span>
+                    <div class="yourDetails_form_flex">
+                        <div class="yourDetails_form_flex_div">
+                            <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangle.png" />
+                            <input type="text" name="userName" placeholder="NAME" onkeydown="solveOverflow(this);">
+                        </div>
+                        <div class="yourDetails_form_flex_div">
+                            <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangleGreen.png" />
+                            <input type="email" name="userEmail" placeholder="EMAIL ADDRESS" onkeydown="solveOverflow(this);">
+                        </div>
+                        <div class="yourDetails_form_flex_div">
+                            <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangle.png" />
+                            <input type="tel" name="userPhone" placeholder="PHONE NUMBER" onkeydown="solveOverflow(this);">
+                        </div>
+                    </div>
+                </div>
+                <div class="typeEnquiry">
+                    <span class="typeEnquiry_header">TYPE OF ENQUIRY!</span>
+                    <div class="typeEnquiry_form_flex">
+                        <div class="typeEnquiry_form_flex_div" onclick="toggleChoice(0);">
+                            <img class="typeEnquiry_form_flex_div_rectangle" src="res/roundedRectangle.png" />
+                            <span>COURSES</span>
+                        </div>
+                        <div class="typeEnquiry_form_flex_div" onclick="toggleChoice(1);">
+                            <img class=" typeEnquiry_form_flex_div_rectangle " src="res/roundedRectangleGreen.png " />
+                            <span>TOURS</span>
+                        </div>
+                        <div class="typeEnquiry_form_flex_div " onclick="toggleChoice(2);">
+                            <img class="typeEnquiry_form_flex_div_rectangle" src="res/roundedRectangle.png" />
+                            <span>NEWSLETTER/OTHER</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="enquiryBox" class="briefDescription">
+                    <span class="briefDescription_header">BRIEF DESCRIPTION OF YOUR ENQUIRY</span>
+                    <div class="briefDescription_form_div">
+                        <img class="briefDescription_form_div_rectangle" src="res/roundedRectangleBig.png" />
+                        <textarea class="briefDescription_form_div_textarea" name="description"></textarea>
+                    </div>
+                </div>
+                <div class="clickSubmit">
+                    <img class="clickSubmit_rectangle" src="res/roundedRectangleGreen.png" />
+                    <span>CLICK TO SUBMIT</span>
+                </div>
+                <input type="submit" id="submitButton" hidden>
+            </form>
+            <img id="arrowScrollBack" class="arrowBack" onclick="scrollUp(this);" />
+            <!--
+            <img id="arrowScroll" class="arrow" onclick="scrollUp(this);" />
+            -->
+            <footer>
+                <span style="font-weight: bold;">'LIVE IN HARMONY'</span> IS DEDICATED TO THE MEMORY OF JAMES KING, MY GUARDIAN & INSPIRATION.
+            </footer>
+        </div>
+    </div>
+</body>
+<script>
+    console.log(window.screen.width, window.screen.height);
+
+</script>
+
+</html>

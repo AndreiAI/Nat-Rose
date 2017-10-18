@@ -1,0 +1,24 @@
+.nav_flex:not(:hover) .nav_flex_div1:nth-child(5) {
+    border-color: #928F1B;
+    color: #928F1B;
+}
+
+article {
+    position: absolute;
+    
+    font-size: 1.01vw;
+    text-align: justify;
+    top: 20.3730569948vw;
+    left: 15.66vw;
+    width: 62.55vw;
+}
+
+
+article * {
+    
+}
+
+p {
+    margin-top: 1.03626943005vw;
+    margin-bottom: 1.03626943005vw;
+}
