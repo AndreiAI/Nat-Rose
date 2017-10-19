@@ -4,43 +4,95 @@
     margin: 0 0 0 0;
 }
 
-body {
-    background-color: #F5F5F5;
+@media all and (max-aspect-ratio: 1/1) {
+
+    * {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+    body {
+        background-color: #F5F5F5;
+    }
+
+    .homepageLayer1 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        width: 96.16vw;
+        height: 149vh;
+        margin: 1.5vh 1.92vw 1.5vh 1.92vw;
+        border-color: #D9D9D9;
+        border-style: solid;
+        border: 5px 5px 5px 5px;
+    }
+
+    .homepageLayer2 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #F4F5F8;
+        width: 94.06vw;
+        height: 147vh;
+        margin: 1vh 1.05vw 1vh 1.05vw;
+    }
+
+    h1 {
+        position: absolute;
+        margin-top: 7vh;
+        font-size: 7vw;
+        text-align: center;
+        width: 100%;
+    }
 }
 
-.homepageLayer1 {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #FFFFFF;
-    width: 96.16vw;
-    height: 125.9325vw;
-    margin: 1.44vw 1.92vw 1.44vw 1.92vw;
-    border-color: #D9D9D9;
-    border-style: solid;
-    border: 5px 5px 5px 5px;
-}
+@media all and (min-aspect-ratio: 1/1) {
 
-.homepageLayer2 {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #F4F5F8;
-    width: 94.06vw;
-    height: 123.51375vw;
-    margin: 1.209375vw 1.05vw 1.209375vw 1.05vw;
-}
+    body {
+        background-color: #F5F5F5;
+    }
 
-h1 {
-    position: absolute;
-    top: 14.0625vw;
-    font-size: 3.91vw;
-    text-align: center;
-    width: 100%;
+    .homepageLayer1 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        width: 96.16vw;
+        height: 125.9325vw;
+        margin: 1.44vw 1.92vw 1.44vw 1.92vw;
+        border-color: #D9D9D9;
+        border-style: solid;
+        border: 5px 5px 5px 5px;
+    }
+
+    .homepageLayer2 {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #F4F5F8;
+        width: 94.06vw;
+        height: 123.51375vw;
+        margin: 1.209375vw 1.05vw 1.209375vw 1.05vw;
+    }
+
+    h1 {
+        position: absolute;
+        top: 14.0625vw;
+        font-size: 3.91vw;
+        text-align: center;
+        width: 100%;
+    }
 }

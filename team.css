@@ -1,338 +1,505 @@
-.nav_flex:not(:hover) .nav_flex_div1:nth-child(6) {
-    border-color: #928F1B;
-    color: #928F1B;
+
+@media all and (max-aspect-ratio: 1/1) {
+
+    .nav_flex:not(:hover) .nav_flex_div1:nth-child(6) {
+        border-color: #928F1B;
+        color: #928F1B;
+    }
+
+    .thePlanet {
+        position: relative;
+        text-align: center;
+        font-size: 2.2vw;
+        font-weight: normal;
+        top: 30.66vw;
+        margin: 0 auto;
+    }
+
+    .silhouettes_flex {
+        display: flex;
+        flex-basis: auto;
+        justify-content: center;
+        margin-top: 50.254375vw;
+        margin-left: 10.5vw;
+        margin-right: 10.5vw;
+    }
+
+    .silhouettes_flex_div {
+        position: relative;
+        margin-left: 1.84vw;
+        margin-right: 1.84vw;
+        align-content: center;
+        font-size: 1.38vw;
+        cursor: pointer;
+    }
+
+    .silhouettes_flex_div:after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 6vw;
+        height: 2px;
+        background: black;
+        margin-left: 4vw;
+        margin-bottom: 0.511875vw;
+        top: 1.26vw;
+    }
+
+    .silhouettes_flex_div:hover:after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 6vw;
+        height: 2px;
+        background: #928F1B;
+        margin-left: 4vw;
+        top: 1.26vw;
+    }
+
+
+    .silhouettes_img {
+        position: relative;
+        width: 14vw;
+        height: auto;
+        z-index: 1;
+    }
+
+    #silhouette1 {
+        top: 1.79vw;
+        left: 0vw;
+    }
+
+    #silhouette2 {
+        top: 1.91vw;
+        left: 0.41vw;
+    }
+
+    #silhouette3 {
+        top: 1.74vw;
+        left: 0.38vw;
+    }
+
+
+    /*
+    .silhouettes_flex_div:nth-child(3):after {
+        top: 1.423125vw;
+    }
+    */
+
+    #silhouette4 {
+        top: 1.87vw;
+        left: 0.33vw;
+    }
+
+    #silhouette5 {
+        top: 1.84vw;
+        left: 0vw;
+    }
+
+    .silhouettes2_flex {
+        display: flex;
+        flex-basis: auto;
+        justify-content: center;
+        margin-top: 3.79125vw;
+        margin-left: 20.5vw;
+        margin-right: 20.5vw;
+    }
+
+    .silhouettes2_flex_div {
+        position: relative;
+        margin-left: 1.84vw;
+        margin-right: 1.84vw;
+        align-content: center;
+        font-size: 1.38vw;
+        cursor: pointer;
+    }
+
+    .silhouettes2_flex_div:after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 6vw;
+        height: 2px;
+        background: black;
+        margin-left: 4vw;
+        margin-bottom: 0.511875vw;
+        top: 0.1575vw;
+    }
+
+    .silhouettes2_flex_div:hover:after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 6vw;
+        height: 2px;
+        background: #928F1B;
+        margin-left: 4vw;
+        margin-bottom: 0.511875vw;
+        top: 0.1575vw;
+    }
+
+    #silhouette21 {
+        top: 0.13vw;
+        left: 0.5vw;
+    }
+
+    #silhouette22 {
+        top: 0.17vw;
+        left: 0.37vw;
+    }
+
+    #silhouette23 {
+        top: 0.04vw;
+        left: 0.61vw;
+    }
+
+    .letsWork {
+        position: absolute;
+        text-align: center;
+        font-weight: normal;
+        bottom: 1.501875vw;
+        margin: 0 auto;
+        font-size: 2.2vw;
+    }
 }
 
-.thePlanet {
-    position: relative;
-    text-align: center;
-    font-size: 1.38vw;
-    font-weight: normal;
-    top: 9.66vw;
-    margin: 0 auto;
-}
+@media all and (min-aspect-ratio: 1/1) {
+    .nav_flex:not(:hover) .nav_flex_div1:nth-child(6) {
+        border-color: #928F1B;
+        color: #928F1B;
+    }
 
-.silhouettes_flex {
-    display: flex;
-    flex-basis: auto;
-    justify-content: center;
-    margin-top: 10.254375vw;
-    margin-left: 20.5vw;
-    margin-right: 20.5vw;
-}
+    .thePlanet {
+        position: relative;
+        text-align: center;
+        font-size: 1.38vw;
+        font-weight: normal;
+        top: 9.66vw;
+        margin: 0 auto;
+    }
 
-.silhouettes_flex_div {
-    position: relative;
-    margin-left: 1.84vw;
-    margin-right: 1.84vw;
-    align-content: center;
-    font-size: 1.38vw;
-    cursor: pointer;
-}
+    .silhouettes_flex {
+        display: flex;
+        flex-basis: auto;
+        justify-content: center;
+        margin-top: 10.254375vw;
+        margin-left: 20.5vw;
+        margin-right: 20.5vw;
+    }
 
-
-/*
-#silhouette1:hover {
-    content: url(res/team/NATALIEGreen.png);
-}
-
-#silhouette2:hover {
-    content: url(res/team/BENGreen.png);
-}
-
-#silhouette3:hover {
-    content: url(res/team/DANIGreen.png);
-}
-
-#silhouette4:hover {
-    content: url(res/team/QUESTION%20MARKGreen.png);
-}
-
-#silhouette5:hover {
-    content: url(res/team/PAGEGreen.png);
-}
-*/
-
-.silhouettes_flex_div:after {
-    content: '';
-    position: relative;
-    display: block;
-    width: 3.55vw;
-    height: 2px;
-    background: black;
-    margin-left: 1.78vw;
-    margin-bottom: 0.511875vw;
-    top: 1.26vw;
-}
-
-.silhouettes_flex_div:hover:after {
-    content: '';
-    position: relative;
-    display: block;
-    width: 3.55vw;
-    height: 2px;
-    background: #928F1B;
-    margin-left: 1.78vw;
-    top: 1.26vw;
-}
+    .silhouettes_flex_div {
+        position: relative;
+        margin-left: 1.84vw;
+        margin-right: 1.84vw;
+        align-content: center;
+        font-size: 1.38vw;
+        cursor: pointer;
+    }
 
 
-/*
-.silhouettes_flex_div:nth-child(1):before {
-    content: 'NATALIE';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-}
+    /*
+    #silhouette1:hover {
+        content: url(res/team/NATALIEGreen.png);
+    }
 
-.silhouettes_flex_div:nth-child(1):hover:before {
-    content: 'NATALIE';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-    color: #928F1B;
-}
+    #silhouette2:hover {
+        content: url(res/team/BENGreen.png);
+    }
 
-.silhouettes_flex_div:nth-child(2):before {
-    content: 'BEN';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-}
+    #silhouette3:hover {
+        content: url(res/team/DANIGreen.png);
+    }
 
-.silhouettes_flex_div:nth-child(2):hover:before {
-    content: 'BEN';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-    color: #928F1B;
-}
+    #silhouette4:hover {
+        content: url(res/team/QUESTION%20MARKGreen.png);
+    }
 
-.silhouettes_flex_div:nth-child(3):before {
-    content: 'DANI';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-}
+    #silhouette5:hover {
+        content: url(res/team/PAGEGreen.png);
+    }
+    */
 
-.silhouettes_flex_div:nth-child(3):hover:before {
-    content: 'DANI';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-    color: #928F1B;
-}
+    .silhouettes_flex_div:after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 3.55vw;
+        height: 2px;
+        background: black;
+        margin-left: 1.78vw;
+        margin-bottom: 0.511875vw;
+        top: 1.26vw;
+    }
 
-.silhouettes_flex_div:nth-child(4):before {
-    content: 'NICK';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-}
-
-.silhouettes_flex_div:nth-child(4):hover:before {
-    content: 'NICK';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-    color: #928F1B;
-}
-
-.silhouettes_flex_div:nth-child(5):before {
-    content: 'PAGE';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-}
-
-.silhouettes_flex_div:nth-child(5):hover:before {
-    content: 'PAGE';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-    color: #928F1B;
-}*/
-
-.silhouettes_img {
-    position: relative;
-    width: 7vw;
-    height: auto;
-    z-index: 1;
-}
-
-#silhouette1 {
-    top: 1.79vw;
-    left: 0vw;
-}
-
-#silhouette2 {
-    top: 1.91vw;
-    left: 0.41vw;
-}
-
-#silhouette3 {
-    top: 1.74vw;
-    left: 0.38vw;
-}
+    .silhouettes_flex_div:hover:after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 3.55vw;
+        height: 2px;
+        background: #928F1B;
+        margin-left: 1.78vw;
+        top: 1.26vw;
+    }
 
 
-/*
-.silhouettes_flex_div:nth-child(3):after {
-    top: 1.423125vw;
-}
-*/
+    /*
+    .silhouettes_flex_div:nth-child(1):before {
+        content: 'NATALIE';
 
-#silhouette4 {
-    top: 1.87vw;
-    left: 0.33vw;
-}
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+    }
 
-#silhouette5 {
-    top: 1.84vw;
-    left: 0vw;
-}
+    .silhouettes_flex_div:nth-child(1):hover:before {
+        content: 'NATALIE';
 
-.silhouettes2_flex {
-    display: flex;
-    flex-basis: auto;
-    justify-content: center;
-    margin-top: 3.79125vw;
-    margin-left: 20.5vw;
-    margin-right: 20.5vw;
-}
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+        color: #928F1B;
+    }
 
-.silhouettes2_flex_div {
-    position: relative;
-    margin-left: 1.84vw;
-    margin-right: 1.84vw;
-    align-content: center;
-    font-size: 1.38vw;
-    cursor: pointer;
-}
+    .silhouettes_flex_div:nth-child(2):before {
+        content: 'BEN';
 
-.silhouettes2_flex_div:after {
-    content: '';
-    position: relative;
-    display: block;
-    width: 3.55vw;
-    height: 2px;
-    background: black;
-    margin-left: 2.1vw;
-    margin-bottom: 0.511875vw;
-    top: 0.1575vw;
-}
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+    }
 
-.silhouettes2_flex_div:hover:after {
-    content: '';
-    position: relative;
-    display: block;
-    width: 3.55vw;
-    height: 2px;
-    background: #928F1B;
-    margin-left: 2.1vw;
-    margin-bottom: 0.511875vw;
-    top: 0.1575vw;
-}
+    .silhouettes_flex_div:nth-child(2):hover:before {
+        content: 'BEN';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+        color: #928F1B;
+    }
+
+    .silhouettes_flex_div:nth-child(3):before {
+        content: 'DANI';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+    }
+
+    .silhouettes_flex_div:nth-child(3):hover:before {
+        content: 'DANI';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+        color: #928F1B;
+    }
+
+    .silhouettes_flex_div:nth-child(4):before {
+        content: 'NICK';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+    }
+
+    .silhouettes_flex_div:nth-child(4):hover:before {
+        content: 'NICK';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+        color: #928F1B;
+    }
+
+    .silhouettes_flex_div:nth-child(5):before {
+        content: 'PAGE';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+    }
+
+    .silhouettes_flex_div:nth-child(5):hover:before {
+        content: 'PAGE';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+        color: #928F1B;
+    }*/
+
+    .silhouettes_img {
+        position: relative;
+        width: 7vw;
+        height: auto;
+        z-index: 1;
+    }
+
+    #silhouette1 {
+        top: 1.79vw;
+        left: 0vw;
+    }
+
+    #silhouette2 {
+        top: 1.91vw;
+        left: 0.41vw;
+    }
+
+    #silhouette3 {
+        top: 1.74vw;
+        left: 0.38vw;
+    }
 
 
-/*
-.silhouettes2_flex_div:nth-child(1):before {
-    content: 'JOHN';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-}
+    /*
+    .silhouettes_flex_div:nth-child(3):after {
+        top: 1.423125vw;
+    }
+    */
 
-.silhouettes2_flex_div:nth-child(1):hover:before {
-    content: 'JOHN';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-    color: #928F1B;
-}
+    #silhouette4 {
+        top: 1.87vw;
+        left: 0.33vw;
+    }
 
-.silhouettes2_flex_div:nth-child(2):before {
-    content: 'NANOO';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-}
+    #silhouette5 {
+        top: 1.84vw;
+        left: 0vw;
+    }
 
-.silhouettes2_flex_div:nth-child(2):hover:before {
-    content: 'NANOO';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-    color: #928F1B;
-}
+    .silhouettes2_flex {
+        display: flex;
+        flex-basis: auto;
+        justify-content: center;
+        margin-top: 3.79125vw;
+        margin-left: 20.5vw;
+        margin-right: 20.5vw;
+    }
 
-.silhouettes2_flex_div:nth-child(3):before {
-    content: 'SIMON';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-}
+    .silhouettes2_flex_div {
+        position: relative;
+        margin-left: 1.84vw;
+        margin-right: 1.84vw;
+        align-content: center;
+        font-size: 1.38vw;
+        cursor: pointer;
+    }
 
-.silhouettes2_flex_div:nth-child(3):hover:before {
-    content: 'SIMON';
-    
-    text-align: center;
-    width: 4.89vw;
-    position: absolute;
-    margin-top: 6.1vw;
-    color: #928F1B;
-}*/
+    .silhouettes2_flex_div:after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 3.55vw;
+        height: 2px;
+        background: black;
+        margin-left: 2.1vw;
+        margin-bottom: 0.511875vw;
+        top: 0.1575vw;
+    }
 
-#silhouette21 {
-    top: 0.13vw;
-    left: 0.5vw;
-}
+    .silhouettes2_flex_div:hover:after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 3.55vw;
+        height: 2px;
+        background: #928F1B;
+        margin-left: 2.1vw;
+        margin-bottom: 0.511875vw;
+        top: 0.1575vw;
+    }
 
-#silhouette22 {
-    top: 0.17vw;
-    left: 0.37vw;
-}
 
-#silhouette23 {
-    top: 0.04vw;
-    left: 0.61vw;
-}
+    /*
+    .silhouettes2_flex_div:nth-child(1):before {
+        content: 'JOHN';
 
-.letsWork {
-    position: relative;
-    text-align: center;
-    font-weight: normal;
-    top: 1.501875vw;
-    margin: 0 auto;
-    font-size: 1.11vw;
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+    }
+
+    .silhouettes2_flex_div:nth-child(1):hover:before {
+        content: 'JOHN';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+        color: #928F1B;
+    }
+
+    .silhouettes2_flex_div:nth-child(2):before {
+        content: 'NANOO';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+    }
+
+    .silhouettes2_flex_div:nth-child(2):hover:before {
+        content: 'NANOO';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+        color: #928F1B;
+    }
+
+    .silhouettes2_flex_div:nth-child(3):before {
+        content: 'SIMON';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+    }
+
+    .silhouettes2_flex_div:nth-child(3):hover:before {
+        content: 'SIMON';
+
+        text-align: center;
+        width: 4.89vw;
+        position: absolute;
+        margin-top: 6.1vw;
+        color: #928F1B;
+    }*/
+
+    #silhouette21 {
+        top: 0.13vw;
+        left: 0.5vw;
+    }
+
+    #silhouette22 {
+        top: 0.17vw;
+        left: 0.37vw;
+    }
+
+    #silhouette23 {
+        top: 0.04vw;
+        left: 0.61vw;
+    }
+
+    .letsWork {
+        position: relative;
+        text-align: center;
+        font-weight: normal;
+        top: 1.501875vw;
+        margin: 0 auto;
+        font-size: 1.11vw;
+    }
 }

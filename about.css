@@ -1,42 +1,89 @@
-.nav_flex:not(:hover) .nav_flex_div0:nth-child(2) {
-    border-color: #928F1B;
-    color: #928F1B;
+
+
+@media all and (max-aspect-ratio: 1/1) {
+
+    article {
+        position: absolute;
+
+        font-size: 2.7vw;
+        text-align: justify;
+        top: 42.1175vw;
+        left: 4.8vw;
+        width: 84.27vw;
+    }
+
+    article * {
+
+    }
+
+    p {
+        margin-top: 3.125vw;
+        margin-bottom: 3.125vw;
+    }
+
+    ul {
+        position: relative;
+        list-style-type: none;
+        margin-top: 3.125vw;
+        padding-left: 0vw;
+    }
+
+    li:before {
+        position: relative;
+        display: inline-block;
+        content: '';
+        width: 3.22vw;
+        height: 2.96vw;
+        background-repeat: no-repeat;
+        background-image: url(res/listArrow2.png);
+        background-size: 4.22vw 4.22vw;
+        background-position: 0 0;
+    }
 }
 
-article {
-    position: absolute;
-    
-    font-size: 1.01vw;
-    text-align: justify;
-    top: 22.1175vw;
-    left: 19.8vw;
-    width: 54.27vw;
-}
+@media all and (min-aspect-ratio: 1/1) {
 
-article * {
-    
-}
 
-p {
-    margin-top: 1.125vw;
-    margin-bottom: 1.125vw;
-}
+    .nav_flex:not(:hover) .nav_flex_div0:nth-child(2) {
+        border-color: #928F1B;
+        color: #928F1B;
+    }
 
-ul {
-    position: relative;
-    list-style-type: none;
-    margin-top: 1.125vw;
-    padding-left: 0vw;
-}
+    article {
+        position: absolute;
 
-li:before {
-    position: relative;
-    display: inline-block;
-    content: '';
-    width: 1.22vw;
-    height: 0.96vw;
-    background-repeat: no-repeat;
-    background-image: url(res/listArrow2.png);
-    background-size: 1.22vw 1.22vw;
-    background-position: 0 0;
+        font-size: 1.01vw;
+        text-align: justify;
+        top: 22.1175vw;
+        left: 19.8vw;
+        width: 54.27vw;
+    }
+
+    article * {
+
+    }
+
+    p {
+        margin-top: 1.125vw;
+        margin-bottom: 1.125vw;
+    }
+
+    ul {
+        position: relative;
+        list-style-type: none;
+        margin-top: 1.125vw;
+        padding-left: 0vw;
+    }
+
+    li:before {
+        position: relative;
+        display: inline-block;
+        content: '';
+        width: 1.22vw;
+        height: 0.96vw;
+        background-repeat: no-repeat;
+        background-image: url(res/listArrow2.png);
+        background-size: 1.22vw 1.22vw;
+        background-position: 0 0;
+    }
 }
