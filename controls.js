@@ -1,8 +1,8 @@
-function navHeight(e) {
+function navweight(e) {
     var all = document.getElementsByClassName('nav_flex');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.height = e.value + "vh";
+        all[i].style.height = e.value + "vw";
     }
 }
 
@@ -10,7 +10,7 @@ function navMarginTop(e) {
     var all = document.getElementsByClassName('nav_flex');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.marginTop = e.value + "vh";
+        all[i].style.marginTop = e.value + "vw";
     }
 }
 
@@ -56,7 +56,7 @@ function tuneMarginTop(e) {
     var all = document.getElementsByTagName('h1');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.marginTop = e.value + "vh";
+        all[i].style.marginTop = e.value + "vw";
     }
 }
 
@@ -72,7 +72,7 @@ function octagonsMarginTop(e) {
     var all = document.getElementsByClassName('octagons_flex');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.marginTop = e.value + "vh";
+        all[i].style.marginTop = e.value + "vw";
     }
 }
 
@@ -80,7 +80,7 @@ function pingsMarginTop(e) {
     var all = document.getElementsByClassName('ping_img');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.top = e.value + "vh";
+        all[i].style.top = e.value + "vw";
     }
 }
 
@@ -88,7 +88,7 @@ function pingsMarginBottom(e) {
     var all = document.getElementsByClassName('ping_img');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.bottom = e.value + "vh";
+        all[i].style.bottom = e.value + "vw";
     }
 }
 
@@ -200,7 +200,7 @@ function comeMarginTop(e) {
     var all = document.getElementsByClassName('come');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.top = e.value + "vh";
+        all[i].style.top = e.value + "vw";
     }
 }
 
@@ -216,7 +216,7 @@ function circlesMarginTop(e) {
     var all = document.getElementsByClassName('circle_flex');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.marginTop = e.value + "vh";
+        all[i].style.marginTop = e.value + "vw";
     }
 }
 
@@ -264,7 +264,7 @@ function footerMarginBottom(e) {
     var all = document.getElementsByTagName('footer');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.bottom = e.value + "vh";
+        all[i].style.bottom = e.value + "vw";
     }
 }
 
@@ -280,7 +280,7 @@ function arrowBackgroundBottom(e) {
     var all = document.getElementsByClassName('arrowBack');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.bottom = e.value + "vh";
+        all[i].style.bottom = e.value + "vw";
     }
 }
 
@@ -313,7 +313,7 @@ function arrowBottom(e) {
     var all = document.getElementsByClassName('arrow');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.bottom = e.value + "vh";
+        all[i].style.bottom = e.value + "vw";
     }
 }
 

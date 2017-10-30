@@ -51,7 +51,7 @@ function letsMarginTop(e) {
     var all = document.getElementsByClassName('letsWork');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.top = e.value + "vw";
+        all[i].style.bottom = e.value + "vw";
     }
 }
 

@@ -10,7 +10,7 @@ function paragraphsMarginsTB(e) {
     var all = document.getElementsByTagName('p');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.marginTop = all[i].style.marginBottom = e.value + "vh";
+        all[i].style.marginTop = all[i].style.marginBottom = e.value + "vw";
     }
 }
 
@@ -18,7 +18,7 @@ function image1MarginsTopDown(e) {
     var all = document.getElementsByClassName('img1');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.marginTop = all[i].style.marginBottom = e.value + "vh";
+        all[i].style.marginTop = all[i].style.marginBottom = e.value + "vw";
     }
 }
 
@@ -34,7 +34,7 @@ function image1Height(e) {
     var all = document.getElementsByClassName('img1');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.height = e.value + "vh";
+        all[i].style.height = e.value + "vw";
     }
 }
 
@@ -42,7 +42,7 @@ function image2MarginsTopDown(e) {
     var all = document.getElementsByClassName('img2');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.marginTop = all[i].style.marginBottom = e.value + "vh";
+        all[i].style.marginTop = all[i].style.marginBottom = e.value + "vw";
     }
 }
 
@@ -58,6 +58,6 @@ function image2Height(e) {
     var all = document.getElementsByClassName('img2');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.height = e.value + "vh";
+        all[i].style.height = e.value + "vw";
     }
 }

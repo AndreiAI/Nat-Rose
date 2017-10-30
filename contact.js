@@ -16,4 +16,10 @@ function checkColorEnquiry(e) {
     if (window.location.href.includes('#enquiryBox')) {
         toggleChoice(2);
     }
+    
+    if(window.screen.width < window.screen.height) {
+            document.getElementsByTagName("h1")[0].innerHTML = "<span style='color: #928F1B'>CONTACT</span> US: <pre></pre>hello<span style='color: #928F1B'>@</span>liveinharmony.co.uk";
+    }
+        
+    console.log(document.getElementsByTagName("h1")[0].innerHTML);
 }

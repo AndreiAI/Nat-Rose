@@ -18,23 +18,8 @@
 
 <body onscroll="onScroll(this);">
     <div class="controls">
-        <label>Nav: height</label>
-        <input id="navHeight" type="number" step="0.01" onchange="navHeight(this)" /><br/>
-        <!-- done -->
-        <label>Nav: margin top</label>
-        <input id="navMarginTop" type="number" step="0.01" onchange="navMarginTop(this)" /><br/>
-        <!-- done -->
-        <label>Nav: margins l/r</label>
-        <input id="navMargins" type="number" step="0.01" onchange="navMargins(this)" /><br/>
-        <!-- done -->
-        <label>Nav: font</label>
-        <input id="navFont" type="number" step="0.01" onchange="navFont(this)" /><br/>
-        <!-- done -->
         <label>Logo: size</label>
         <input id="navLogoSize" type="number" step="0.01" onchange="navLogoSize(this)" /><br/>
-        <!-- done -->
-        <label>Nav item: width</label>
-        <input id="navDivWidth" type="number" step="0.01" onchange="navDivWidth(this)" /><br/>
         <!-- done -->
         <label>Tune into: margin top </label>
         <input id="tuneMarginTop" type="number" step="0.01" onchange="tuneMarginTop(this)" /><br/>
@@ -52,7 +37,6 @@
         <!-- done -->
         <label>Octagon: size </label>
         <input id="octagonSize" type="number" step="0.01" onchange="octagonSize(this)" /><br/>
-        <!-- done -->
         <!-- done -->
         <label>Pings: margin top </label>
         <input id="pingsMarginTop" type="number" step="0.01" onchange="pingsMarginTop(this)" /><br/>
@@ -127,75 +111,42 @@
         <label>Footer: font size </label>
         <input id="footerFontSize" type="number" step="0.01" onchange="footerFontSize(this)" /><br/>
         <!-- done -->
-        <label>Arrow Background: bottom </label>
-        <input id="arrowBackgroundBottom" type="number" step="0.01" onchange="arrowBackgroundBottom(this)" /><br/>
-        <!-- done -->
-        <label>Arrow Background: right </label>
-        <input id="arrowBackgroundRight" type="number" step="0.01" onchange="arrowBackgroundRight(this)" /><br/>
-        <!-- done -->
-        <label>Arrow Background: width </label>
-        <input id="arrowBackgroundWidth" type="number" step="0.01" onchange="arrowBackgroundWidth(this)" /><br/>
-        <!-- done -->
-        <label>Arrow Background: height </label>
-        <input id="arrowBackgroundHeight" type="number" step="0.01" onchange="arrowBackgroundHeight(this)" /><br/>
-        <!-- done -->
-        <label>Arrow: bottom </label>
-        <input id="arrowBottom" type="number" step="0.01" onchange="arrowBottom(this)" /><br/>
-        <!-- done -->
-        <label>Arrow: right </label>
-        <input id="arrowRight" type="number" step="0.01" onchange="arrowRight(this)" /><br/>
-        <!-- done -->
-        <label>Arrow: width </label>
-        <input id="arrowWidth" type="number" step="0.01" onchange="arrowWidth(this)" /><br/>
-        <!-- done -->
-        <label>Arrow: height </label>
-        <input id="arrowHeight" type="number" step="0.01" onchange="arrowHeight(this)" /><br/>
-        <!-- done -->
     </div>
     <script>
-        document.getElementById("navHeight").value = 16.03;
-        document.getElementById("navMarginTop").value = 4.45;
-        document.getElementById("navMargins").value = 9.5;
-        document.getElementById("navFont").value = 1.4;
-        document.getElementById("navLogoSize").value = 10;
-        document.getElementById("navDivWidth").value = 6;
-        document.getElementById("tuneMarginTop").value = 5.15;
-        document.getElementById("tuneFontSize").value = 4.4;
-        document.getElementById("octagonsMarginTop").value = 24.65;
-        document.getElementById("octagonsMargins").value = 20.8;
-        document.getElementById("octagonMargins").value = 4.91;
+        document.getElementById("navLogoSize").value = 20;
+        document.getElementById("tuneMarginTop").value = 12.31;
+        document.getElementById("tuneFontSize").value = 5.5;
+        document.getElementById("octagonsMarginTop").value = 34.11;
+        document.getElementById("octagonsMargins").value = 4.11;
+        document.getElementById("octagonMargins").value = 6;
+        document.getElementById("octagonSize").value = 17;
         document.getElementById("pingsMarginTop").value = 2;
         document.getElementById("pingsMarginRight").value = 0;
         document.getElementById("pingsMarginLeft").value = 0;
-        document.getElementById("pingsHeight").value = 6;
+        document.getElementById("pingsHeight").value = 12;
         //
-        document.getElementById("ping1MarginTop").value = -0;
-        document.getElementById("ping1MarginLeft").value = -0.25;
-        document.getElementById("ping1Height").value = 7.5;
+        document.getElementById("ping1MarginTop").value = 3.25;
+        document.getElementById("ping1MarginLeft").value = -0.43;
+        document.getElementById("ping1Height").value = 11.11;
         //
-        document.getElementById("ping2MarginTop").value = -0;
+        document.getElementById("ping2MarginTop").value = 5.3;
         document.getElementById("ping2MarginLeft").value = 0.15;
-        document.getElementById("ping2Height").value = 4.5;
+        document.getElementById("ping2Height").value = 6.5;
         //
-        document.getElementById("ping3MarginTop").value = -0;
-        document.getElementById("ping3MarginLeft").value = -0.8;
-        document.getElementById("ping3Height").value = 7.5;
+        document.getElementById("ping3MarginTop").value = 3.2;
+        document.getElementById("ping3MarginLeft").value = -0.85;
+        document.getElementById("ping3Height").value = 11.11;
         //
-        document.getElementById("octagonSize").value = 11.45;
-        document.getElementById("comeMarginTop").value = 101.62;
-        document.getElementById("comeFontSize").value = 1.38;
-        document.getElementById("circlesMarginTop").value = 36.42;
-        document.getElementById("circlesMargins").value = 22.07;
-        document.getElementById("circleMargins").value = 3.9;
-        document.getElementById("circleSize").value = 9.6;
-        document.getElementById("circleTextMarginTop").value = 43;
-        document.getElementById("circleTextFontSize").value = 1;
-        document.getElementById("footerMarginBottom").value = 2.8;
-        document.getElementById("footerFontSize").value = 1;
-        document.getElementById("arrowBackgroundBottom").value = 31.7;
-        document.getElementById("arrowBackgroundRight").value = 1.91;
-        document.getElementById("arrowBackgroundWidth").value = 2.22;
-        document.getElementById("arrowBackgroundHeight").value = 2.22;
+        document.getElementById("comeMarginTop").value = 77.22;
+        document.getElementById("comeFontSize").value = 2.2;
+        document.getElementById("circlesMarginTop").value = 33.44;
+        document.getElementById("circlesMargins").value = 6;
+        document.getElementById("circleMargins").value = 4;
+        document.getElementById("circleSize").value = 15.55;
+        document.getElementById("circleTextMarginTop").value = 48.36;
+        document.getElementById("circleTextFontSize").value = 1.6;
+        document.getElementById("footerMarginBottom").value = 1.575;
+        document.getElementById("footerFontSize").value = 1.6;
     </script>
     <div class="homepageLayer1">
         <div class="homepageLayer2">
