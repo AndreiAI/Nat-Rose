@@ -24,8 +24,8 @@
         right: 0;
         background-color: #FFFFFF;
         width: 96.16vw;
-        height: 149vh;
-        margin: 1.5vh 1.92vw 1.5vh 1.92vw;
+        height: 268.2vw;
+        margin: 2.7vw 1.92vw 2.7vw 1.92vw;
         border-color: #D9D9D9;
         border-style: solid;
         border: 5px 5px 5px 5px;
@@ -40,13 +40,13 @@
         right: 0;
         background-color: #F4F5F8;
         width: 94.06vw;
-        height: 147vh;
-        margin: 1vh 1.05vw 1vh 1.05vw;
+        height: 264.6vw;
+        margin: 1.8vw 1.05vw 1.8vw 1.05vw;
     }
 
     h1 {
         position: absolute;
-        margin-top: 7vh;
+        margin-top: 12.8vw;
         font-size: 5.5vw;
         text-align: center;
         width: 100%;

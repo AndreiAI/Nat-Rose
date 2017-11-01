@@ -1,12 +1,12 @@
 
 @media all and (max-aspect-ratio: 1/1) {
 
-    article {
+ article {
         position: absolute;
 
         font-size: 2vw;
         text-align: justify;
-        top: 35vw;
+        top: 34vw;
         left: 5.8vw;
         width: 82.22vw;
     }

@@ -4,17 +4,17 @@
     h1 {
         position: absolute;
         margin-top: 0;
-        top: 24.0625vw;
+        top: 23.55vw;
         text-align: center;
         width: 100%;
-        font-size: 5vw;
+        font-size: 5.5vw;
     }
 
     .toFind {
         position: relative;
         text-align: center;
         font-weight: normal;
-        top: 30.48vw;
+        top: 23.33vw;
         margin: 0 auto;
         font-size: 2.2vw;
     }
@@ -24,7 +24,7 @@
         flex: 1 0;
         flex-basis: auto;
         justify-content: center;
-        margin-top: 43.7475vw;
+        margin-top: 28.8vw;
         margin-left: 5.07vw;
         margin-right: 5.07vw;
     }
@@ -90,6 +90,7 @@
         position: absolute;
         margin-top: 9.9vw;
         color: #928F1B;
+        font-size: 2.2vw;
     }
 
     .circle_flex_div:nth-child(2):before {
@@ -99,6 +100,7 @@
         width: 14vw;
         position: absolute;
         margin-top: 16vw;
+        font-size: 2.2vw;
     }
 
     .circle_flex_div:nth-child(2):hover:before {
@@ -118,6 +120,7 @@
         width: 14vw;
         position: absolute;
         margin-top: 16vw;
+        font-size: 2.2vw;
     }
 
     .circle_flex_div:nth-child(3):hover:before {
@@ -128,6 +131,7 @@
         position: absolute;
         margin-top: 16vw;
         color: #928F1B;
+        font-size: 2.2vw;
     }
 
     .circle_flex_div:nth-child(4):before {
@@ -137,6 +141,7 @@
         width: 14vw;
         position: absolute;
         margin-top: 16vw;
+        font-size: 2.2vw;
     }
 
     .circle_flex_div:nth-child(4):hover:before {
@@ -156,6 +161,7 @@
         width: 14vw;
         position: absolute;
         margin-top: 16vw;
+        font-size: 2.2vw;
     }
 
     .circle_flex_div:nth-child(5):hover:before {
@@ -175,6 +181,7 @@
         width: 14vw;
         position: absolute;
         margin-top: 16vw;
+        font-size: 2.2vw;
     }
 
     .circle_flex_div:nth-child(6):hover:before {
@@ -194,6 +201,7 @@
         width: 14vw;
         position: absolute;
         margin-top: 16vw;
+        font-size: 2.2vw;
     }
 
     .circle_flex_div:nth-child(7):hover:before {
@@ -225,33 +233,33 @@
     }
 
     #ping_img2 {
-        top: -1.648125vw;
+        top: -2.45vw;
         left: 0vw;
-        height: 6.54vw;
+        height: 5.88vw;
     }
 
     #ping_img3 {
         top: -1.42875vw;
         left: 0vw;
-        height: 5.2vw;
+        height: 4.44vw;
     }
 
     #ping_img4 {
         top: -1.65375vw;
         left: 0.3vw;
-        height: 7.6vw;
+        height: 6.11vw;
     }
 
     #ping_img5 {
         top: -1.8225vw;
         left: 0vw;
-        height: 8.22vw;
+        height: 7.11vw;
     }
 
     #ping_img6 {
         top: -1.65375vw;
         left: 0.11vw;
-        height: 5vw;
+        height: 4.44vw;
     }
 
     #ping_img7 {
@@ -261,16 +269,16 @@
     }
 
     form * {
-        font-size: 1.3vw;
+        font-size: 2.2vw;
     }
-
+    
     .yourDetails {
         position: relative;
         text-align: center;
         font-weight: normal;
         margin: 0 auto;
         top: 7.625vw;
-        margin-top: -2.446875vw;
+        margin-top: -2.22vw;
     }
 
     .yourDetails_header {
@@ -296,8 +304,8 @@
 
     .yourDetails_form_flex_div_rectangle {
         position: relative;
-        width: 25.7vw;
-        height: 7.2vw;
+        width: 21.11vw;
+        height: 5.55vw;
     }
 
     input:focus {
@@ -346,7 +354,7 @@
         font-weight: normal;
         margin: 0 auto;
         top: 7.625vw;
-        margin-top: 1.24875vw;
+        margin-top: 2.11vw;
     }
 
     .typeEnquiry_header {
@@ -358,7 +366,7 @@
         display: flex;
         flex-basis: auto;
         justify-content: center;
-        margin-top: 1.3725vw;
+        margin-top: 2.22vw;
         margin-left: 6.07vw;
         margin-right: 6.07vw;
     }
@@ -372,8 +380,8 @@
 
     .typeEnquiry_form_flex_div_rectangle {
         position: relative;
-        width: 25.7vw;
-        height: 7.2vw;
+        width: 21.11vw;
+        height: 5.55vw;
     }
 
     .typeEnquiry_form_flex_div>span {
@@ -421,13 +429,13 @@
         font-weight: normal;
         margin: 0 auto;
         top: 11.25vw;
-        margin-top: -1.906875vw;
+        margin-top: 2.22vw;
     }
 
     .briefDescription_form_div_rectangle {
-        width: 64.86%;
-        height: 21.043125vw;
-        margin-top: 1.305vw;
+        width: 75.55%;
+        height: 22.44vw;
+        margin-top: 2vw;
     }
 
     textarea:focus {
@@ -436,7 +444,7 @@
 
     .briefDescription_form_div_textarea {
         position: absolute;
-        top: 50%;
+        top: 57%;
         left: 50%;
         -webkit-transform: translate(-50%, -50%);
         -moz-transform: translate(-50%, -50%);
@@ -444,24 +452,25 @@
         transform: translate(-50%, -50%);
         background-color: transparent;
         border: none;
-        width: 60%;
-        height: 11.25vw;
+        width: 65.55%;
+        height: 20.44vw;
         resize: none;
         color: white;
-        font-size: 1.1vw;
+        font-size: 2.2vw;
     }
 
     .clickSubmit {
+        font-size: 2.2vw;
         position: relative;
         text-align: center;
         font-weight: normal;
         margin: 0 auto;
-        top: 12.943125vw;
+        top: 13.33vw;
     }
 
     .clickSubmit_rectangle {
-        width: 17.88vw;
-        height: 3.69vw;
+        width: 21.44vw;
+        height: 5.11vw;
     }
 
     .clickSubmit>span {
@@ -476,6 +485,11 @@
         transform: translate(-50%, -50%);
         text-align: center;
         color: white;
+    }
+    
+    footer {
+        
+        font-size: 2.2vw;
     }
 
 

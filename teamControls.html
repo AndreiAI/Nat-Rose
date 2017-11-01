@@ -13,7 +13,7 @@
     <script src="teamControls.js"></script>
 </head>
 
-<body>
+<body onresize="five3or44();">
     <div class="controls">
         <label>The Planet: margin top </label>
         <input id="thePlanetMarginTop" type="number" step="0.01" onchange="thePlanetMarginTop(this)" /><br/>
@@ -153,9 +153,9 @@
         <!-- done -->
     </div>
     <script>
-        document.getElementById("thePlanetMarginTop").value = 30.66;
+        document.getElementById("thePlanetMarginTop").value = 22.66;
         document.getElementById("thePlanetFontSize").value = 2.2;
-        document.getElementById("silhouettesMarginTop").value = 50.25;
+        document.getElementById("silhouettesMarginTop").value = 25.33;
         document.getElementById("silhouettesMargins").value = 10.5;
         document.getElementById("silhouetteMargins").value = 1.84;
         document.getElementById("silhouetteSize").value = 14;
@@ -239,9 +239,11 @@
                 <pre></pre>To find out more, please contact one of our team members who will be happy to help you with any questions you have.
             </h2>
             <div class="silhouettes_flex">
-                <div class="silhouettes_flex_div">
-                    <img id="silhouette1" class="silhouettes_img" src="res/team/NATALIE.png" />
-                </div>
+                <a href="natalie.html">
+                    <div class="silhouettes_flex_div">
+                        <img id="silhouette1" class="silhouettes_img" src="res/team/NATALIE.png" />
+                    </div>
+                </a>
                 <div class="silhouettes_flex_div">
                     <img id="silhouette2" class="silhouettes_img" src="res/team/BEN.png" />
                 </div>
@@ -251,11 +253,14 @@
                 <div class="silhouettes_flex_div">
                     <img id="silhouette4" class="silhouettes_img" src="res/team/QUESTION%20MARK.png" />
                 </div>
-                <div class="silhouettes_flex_div">
+                <div id="lastFirstRow" class="silhouettes_flex_div">
                     <img id="silhouette5" class="silhouettes_img" src="res/team/PAGE.png" />
                 </div>
             </div>
             <div class="silhouettes2_flex">
+                <div id="firstLastRow" class="silhouettes2_flex_div">
+                    <img id="silhouette20" class="silhouettes_img" src="res/team/PAGE.png" />
+                </div>
                 <div class="silhouettes2_flex_div">
                     <img id="silhouette21" class="silhouettes_img" src="res/team/JOHN.png" />
                 </div>
@@ -271,7 +276,26 @@
             </h2>
         </div>
     </div>
-
+    <script>
+        function five3or44(e) {
+            console.log(window.outerWidth, window.outerHeight);
+            if(window.outerWidth > window.outerHeight) {
+                document.getElementById("lastFirstRow").style.display = "block";
+                document.getElementById("firstLastRow").style.display = "none";
+            } else {
+                document.getElementById("lastFirstRow").style.display = "none";
+                document.getElementById("firstLastRow").style.display = "block";
+            }
+        }
+        
+        if(window.outerWidth > window.outerHeight) {
+            document.getElementById("lastFirstRow").style.display = "block";
+            document.getElementById("firstLastRow").style.display = "none";
+        } else {
+            document.getElementById("lastFirstRow").style.display = "none";
+            document.getElementById("firstLastRow").style.display = "block";
+        }
+    </script>
 </body>
 
 
