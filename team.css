@@ -32,7 +32,7 @@
         font-size: 1.38vw;
         cursor: pointer;
     }
-
+/*
     .silhouettes_flex_div:after {
         content: '';
         position: relative;
@@ -55,7 +55,7 @@
         margin-left: 4vw;
         top: 1.26vw;
     }
-
+*/
 
     .silhouettes_img {
         position: relative;
