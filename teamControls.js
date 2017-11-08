@@ -175,6 +175,22 @@ function silhouette2Margins(e) {
     }
 }
 
+function silhouettesMiddleMarginTop(e) {
+    var all = document.getElementsByClassName('silhouettesM_flex');
+
+    for (var i = 0; i < all.length; i++) {
+        all[i].style.marginTop = e.value + "vw";
+    }
+}
+
+function silhouetteMiddleMargins(e) {
+    var all = document.getElementsByClassName('silhouettesM_flex_div');
+
+    for (var i = 0; i < all.length; i++) {
+        all[i].style.marginLeft = all[i].style.marginRight = e.value + "vw";
+    }
+}
+
 
 //
 function silhouette21MarginTop(e) {

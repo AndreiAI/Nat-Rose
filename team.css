@@ -153,6 +153,43 @@
         left: 0.61vw;
     }
 
+    #toggleLast1Ping {
+        display: none;
+    }
+    
+    #toggleLast2Ping {
+        display: none;
+    }
+    
+    .silhouettesM_flex {
+        display: flex;
+        flex-basis: auto;
+        justify-content: center;
+        margin-top: 3.79125vw;
+        margin-left: 20.5vw;
+        margin-right: 20.5vw;
+    }
+
+    .silhouettesM_flex_div {
+        position: relative;
+        margin-left: 1.84vw;
+        margin-right: 1.84vw;
+        align-content: center;
+        font-size: 1.38vw;
+        cursor: pointer;
+    }
+    
+    #silhouetteM1 {
+        top: 0.13vw;
+        left: 0.5vw;
+    }
+
+    #silhouetteM2 {
+        top: 0.17vw;
+        left: 0.37vw;
+    }
+
+    
     .letsWork {
         position: absolute;
         text-align: center;
@@ -196,6 +233,15 @@
     }
 
 
+    #toggleLast1Ping {
+        display: block;
+    }
+    
+    #toggleLast2Ping {
+        display: block;
+    }
+    
+    
     /*
     #silhouette1:hover {
         content: url(res/team/NATALIEGreen.png);
@@ -491,6 +537,34 @@
     #silhouette23 {
         top: 0.04vw;
         left: 0.61vw;
+    }
+    
+    .silhouettesM_flex {
+        display: none;
+        flex-basis: auto;
+        justify-content: center;
+        margin-top: 3.79125vw;
+        margin-left: 20.5vw;
+        margin-right: 20.5vw;
+    }
+
+    .silhouettesM_flex_div {
+        position: relative;
+        margin-left: 1.84vw;
+        margin-right: 1.84vw;
+        align-content: center;
+        font-size: 1.38vw;
+        cursor: pointer;
+    }
+    
+    #silhouetteM1 {
+        top: 0.13vw;
+        left: 0.5vw;
+    }
+
+    #silhouetteM2 {
+        top: 0.17vw;
+        left: 0.37vw;
     }
 
     .letsWork {
