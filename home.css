@@ -7,6 +7,7 @@ a {
 
 @media all and (max-aspect-ratio: 1/1) {
 
+    
     .tuneIn {
         font-size: 5.5vw;
         margin-top: 12.31vw;
@@ -157,6 +158,11 @@ a {
 }
 
 @media all and (min-aspect-ratio: 1/1) {
+    
+    .mobileNav {
+        display: none;
+    }
+    
     .nav_flex:not(:hover) .nav_flex_div0:nth-child(1) {
         border-color: #928F1B;
         color: #928F1B;
