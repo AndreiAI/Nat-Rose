@@ -9,7 +9,7 @@
     .thePlanet {
         position: relative;
         text-align: center;
-        font-size: 2.2vw;
+        font-size: 2.5vw;
         font-weight: normal;
         top: 22.66vw;
         margin: 0 auto;
@@ -19,7 +19,7 @@
         display: flex;
         flex-basis: auto;
         justify-content: center;
-        margin-top: 25.33vw;
+        margin-top: 34.2vw;
         margin-left: 10.5vw;
         margin-right: 10.5vw;
     }
@@ -59,7 +59,7 @@
 
     .silhouettes_img {
         position: relative;
-        width: 14vw;
+        width: 14.5vw;
         height: auto;
         z-index: 1;
     }
@@ -208,10 +208,11 @@
     .thePlanet {
         position: relative;
         text-align: center;
-        font-size: 1.38vw;
+        font-size: 1.01vw;
         font-weight: normal;
         top: 9.66vw;
         margin: 0 auto;
+        
     }
 
     .silhouettes_flex {
@@ -263,7 +264,7 @@
         content: url(res/team/PAGEGreen.png);
     }
     */
-
+/*
     .silhouettes_flex_div:after {
         content: '';
         position: relative;
@@ -286,7 +287,7 @@
         margin-left: 1.78vw;
         top: 1.26vw;
     }
-
+*/
 
     /*
     .silhouettes_flex_div:nth-child(1):before {
@@ -440,7 +441,7 @@
         font-size: 1.38vw;
         cursor: pointer;
     }
-
+/*
     .silhouettes2_flex_div:after {
         content: '';
         position: relative;
@@ -464,7 +465,7 @@
         margin-bottom: 0.511875vw;
         top: 0.1575vw;
     }
-
+*/
 
     /*
     .silhouettes2_flex_div:nth-child(1):before {

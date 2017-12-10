@@ -12,10 +12,23 @@
     <link rel="stylesheet" href="contact.css" />
     <script type="text/javascript" src="scroll.js"></script>
     <script type="text/javascript" src="contact.js"></script>
-
+    <script>
+        function submitForm() {
+            if(document.getElementById("userName").value != "" && document.getElementById("userEmail").value != "" && document.getElementById("userPhone").value != "" && document.getElementById("description").value != ""){
+                document.getElementById("submitForm").submit();
+                alert("Thank you! We will be in touch soon.");
+            } else {
+                alert("Incomplete form!");
+            }
+        }
+        
+        function setFocus(element) {
+            document.getElementById(element).focus();
+        }
+    </script>
 </head>
 
-<body onscroll="onScroll(this);" onload="checkColorEnquiry(this);">
+<body onscroll="onScroll(this);" onload="checkColorEnquiry(this);" onresize="five3or44(this);">
     <div class="homepageLayer1">
         <div class="homepageLayer2">
             <nav class="nav_flex">
@@ -47,8 +60,7 @@
             </h1>
 
             <h2 class="toFind">
-                To find out more, please contact one of our team members who will be all too happy
-                <pre></pre>to help you with any questions you have.
+                To find out more, please contact one of our team members <pre></pre> who will answer any questions you have at hello@liveinharmony.co.uk
             </h2>
             <div class="circle_flex">
                 <div id="ping1" class="circle_flex_div">
@@ -111,49 +123,51 @@
                     </a>
                 </div>
             </div>
-            <form>
+            <iframe display="hidden" width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+            <form id="submitForm" action="sendMail.php" method="post" target="dummyframe">
                 <div class="yourDetails">
                     <span class="yourDetails_header">YOUR DETAILS!</span>
                     <div class="yourDetails_form_flex">
-                        <div class="yourDetails_form_flex_div">
+                        <div class="yourDetails_form_flex_div" onclick="setFocus('userName');">
                             <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangle.png" />
-                            <input type="text" name="userName" placeholder="NAME" onkeydown="solveOverflow(this);">
+                            <input id="userName" type="text" name="userName" placeholder="NAME" onkeydown="solveOverflow(this);">
                         </div>
-                        <div class="yourDetails_form_flex_div">
+                        <div class="yourDetails_form_flex_div" onclick="setFocus('userEmail');">
                             <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangleGreen.png" />
-                            <input type="email" name="userEmail" placeholder="EMAIL ADDRESS" onkeydown="solveOverflow(this);">
+                            <input id="userEmail" type="email" name="userEmail" placeholder="EMAIL ADDRESS" onkeydown="solveOverflow(this);">
                         </div>
-                        <div class="yourDetails_form_flex_div">
+                        <div class="yourDetails_form_flex_div" onclick="setFocus('userPhone');">
                             <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangle.png" />
-                            <input type="tel" name="userPhone" placeholder="PHONE NUMBER" onkeydown="solveOverflow(this);">
-                        </div>
+                            <input id="userPhone" type="tel" name="userPhone" placeholder="PHONE NUMBER" onkeydown="solveOverflow(this);">
+                        </div>  
                     </div>
                 </div>
+                <input id="inputType" type="hidden" name="type" value="tours" />
                 <div class="typeEnquiry">
                     <span class="typeEnquiry_header">TYPE OF ENQUIRY!</span>
                     <div class="typeEnquiry_form_flex">
-                        <div class="typeEnquiry_form_flex_div" onclick="toggleChoice(0);">
+                        <div class="typeEnquiry_form_flex_div" onclick="toggleChoice(0, 'courses');">
                             <img class="typeEnquiry_form_flex_div_rectangle" src="res/roundedRectangle.png" />
                             <span>COURSES</span>
                         </div>
-                        <div class="typeEnquiry_form_flex_div" onclick="toggleChoice(1);">
+                        <div class="typeEnquiry_form_flex_div" onclick="toggleChoice(1, 'tours');">
                             <img class=" typeEnquiry_form_flex_div_rectangle " src="res/roundedRectangleGreen.png " />
                             <span>TOURS</span>
                         </div>
-                        <div class="typeEnquiry_form_flex_div " onclick="toggleChoice(2);">
+                        <div class="typeEnquiry_form_flex_div " onclick="toggleChoice(2, 'news/other');">
                             <img class="typeEnquiry_form_flex_div_rectangle" src="res/roundedRectangle.png" />
                             <span>NEWSLETTER/OTHER</span>
                         </div>
                     </div>
                 </div>
-                <div id="enquiryBox" class="briefDescription">
+                <div id="enquiryBox" class="briefDescription" onclick="setFocus('description');">
                     <span class="briefDescription_header">BRIEF DESCRIPTION OF YOUR ENQUIRY</span>
                     <div class="briefDescription_form_div">
                         <img class="briefDescription_form_div_rectangle" src="res/roundedRectangleBig.png" />
-                        <textarea class="briefDescription_form_div_textarea" name="description"></textarea>
+                        <textarea id="description" class="briefDescription_form_div_textarea" name="description"></textarea>
                     </div>
                 </div>
-                <div class="clickSubmit">
+                <div class="clickSubmit" onclick="submitForm();">
                     <img class="clickSubmit_rectangle" src="res/roundedRectangleGreen.png" />
                     <span>CLICK TO SUBMIT</span>
                 </div>
@@ -163,14 +177,32 @@
             <!--
             <img id="arrowScroll" class="arrow" onclick="scrollUp(this);" />
             -->
-            <footer>
-                <span style="font-weight: bold;">'LIVE IN HARMONY'</span> IS DEDICATED TO THE MEMORY OF JAMES KING,<pre></pre> MY GUARDIAN & INSPIRATION.
+            <footer id="footerContact" >
+                <span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration
             </footer>
         </div>
     </div>
 </body>
 <script>
     console.log(window.screen.width, window.screen.height);
+
+</script>
+<script>
+    if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
+        document.getElementById("footerContact").innerHTML =  "";
+    } else {
+        document.getElementById("footerContact").innerHTML =  "<span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration";
+    }
+
+    function five3or44(e) {
+        console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
+
+        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
+            document.getElementById("footerContact").innerHTML =  "";
+        } else {
+            document.getElementById("footerContact").innerHTML =  "<span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration";
+        }
+    }
 
 </script>
 

@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 @media all and (max-aspect-ratio: 1/1) {
 
     article {
@@ -23,14 +27,14 @@
         margin-top: 1.125vw;
         margin-bottom: 1.125vw;
         width: 84.27vw;
-        height: auto;
+        height: 46.98vw;
     }
 
     .img2 {
         margin-top: 1.125vw;
         margin-bottom: 1.125vw;
         width: 84.27vw;
-        
+        height: 46.98vw;
     }
 }
 

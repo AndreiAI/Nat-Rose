@@ -48,3 +48,7 @@ function octagon_img3Hover(e) {
         document.getElementById('octagon_img3').src = 'res/wind_mill_copy-3.png';
     }, 100);
 }
+
+function openMenu(e){
+    
+}

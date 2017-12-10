@@ -13,42 +13,38 @@
     <script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="octagons.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
-    <script type="text/javascript" src="mobileNav.js"></script>
 </head>
 
-<body onscroll="onScroll(this);">
-    <div class="homepageLayer1" id="container">
-        <div class="homepageLayer2">
+<body onscroll="onScroll(this);" onresize="navDisplay(this);" >
+    <div class="homepageLayer1" id="container" >
+        <div class="homepageLayer2" >
             <!-- Navigation mobile -->
-            
-            <div class="open">
-                <span class="cls"></span>    
-                <span>        
-                    <ul class="sub-menu ">
-                        <li>
-                            <a href="index.html" title="Home">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html" title="About">About</a>
-                        </li>
-                        <li>
-                            <a href="mission.html" title="Mission">Mission</a>
-                        </li>
-                        <li>
-                            <a href="services.html" title="Services">Services</a>
-                        </li>
-                        <li>
-                            <a href="team.html" title="Team">Team</a>
-                        </li>
-                        <li>
-                            <a href="contact.html" title="Contact">Contact</a>
-                        </li>
-                    </ul>
-                </span>
-                <span class="cls"></span>
+            <div id="navMob">
+                <div>
+                    <img id="menuButton" src="res/menuButton.png">
+                </div>
+                <ul id="menu">
+
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="About">About</a>
+                    </li>
+                    <li>
+                        <a href="mission.html" title="Mission">Mission</a>
+                    </li>
+                    <li>
+                        <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="team.html" title="Team">Team</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            
-            <!-- Navigation mobile end -->
             
             <nav class="nav_flex">
                 <div class="nav_flex_div0">
@@ -131,14 +127,55 @@
             <img id="arrowScroll" class="arrow" onclick="scrollUp(this);" />
             -->
             <footer>
-                Copyright &copy; 2017 Built by ???Limited. All rights reserved.
+                Copyright &copy; 2018 Built by Andrei Iordache & designed by Live In Harmony.<pre></pre>All rights reserved.
+                <!--
                 <pre></pre>Registered in England Company No. ??? VAT Registration No. ???
+                -->
             </footer>
         </div>
     </div>
 </body>
 <script>
+    function hideMenuButton(){
+        document.getElementById("menuButton").style.display = "none";
+        document.getElementById("menu").style.display = "block";
+    }
+        
+    function getMenuButton(){
+        document.getElementById("menuButton").style.display = "block";
+        document.getElementById("menu").style.display = "none";
+    }
+    
+    $('#menuButton').click(function (evt) {
+        evt.stopPropagation();
+        
+        hideMenuButton();
+    });
+    
+    
+    $('.homepageLayer2').click(function (evt) {
+        evt.stopPropagation();
+        
+        getMenuButton();
+    });
+    
+    if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("navMob").style.display =  "block";
+    } else {
+        document.getElementById("navMob").style.display =  "none";
+    }
+    
+    function navDisplay(e) {
+        console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
 
+        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display =  "block";
+        } else {
+            document.getElementById("navMob").style.display =  "none";
+        }
+    }
+    
+    //window.addEventListener("resize", navDisplay);
 </script>
 
 </html>

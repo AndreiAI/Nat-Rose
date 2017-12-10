@@ -8,7 +8,7 @@
         text-align: left;
         left: 4.66vw;
         font-size: 3vw;
-        font-family: AvenirBook;
+        font-family: AvenirHeavy;
         top: 15.6875vw;
     }
 
@@ -17,22 +17,22 @@
         text-align: left;
         left: 15.66vw;
         font-size: 3vw;
-        font-family: AvenirBook;
+        font-family: AvenirHeavy;
     }
 
     .comingSoon {
-        position: absolute;
+        position:relative;
         text-align: left;
         left:4.66vw;
         font-size: 3vw;
         font-family: AvenirBook;
-        top: 107vw;
+        top: 92vw;
     }
 
     article {
         position: absolute;
 
-        font-size: 2vw;
+        font-size: 2.5vw;
         text-align: justify;
         top: 35vw;
         left: 4.8vw;
@@ -69,12 +69,13 @@
     }
 
     .comingSoon {
+        
         position: absolute;
+        top: 46vw;
         text-align: left;
-        left:15.66vw;
+        left: 15.66vw;
         font-size: 1.3vw;
         font-family: AvenirBook;
-        top: 45vw;
     }
 
     article {

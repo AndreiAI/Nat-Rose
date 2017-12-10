@@ -42,17 +42,20 @@
                 <span style="color: #928F1B">MEET</span> THE TEAM
             </h1>
             <h2 class="thePlanet">
-                Our team has been carefully selected and consists of individuals with<br/>experience in design, catering, engineering, environmental studies, education,
-                <br/>science, cycling and sport.<br/>
+                Our team has been carefully selected and consists of individuals with experience in design, catering, engineering,<br/> environmental studies, education, science, cycling and sport.<br/>
                 <br/>
-                We are very passionate about the planet and will arm you with the knowledge
-                <br/>and skills you require to start to live your life in harmony with the planet.
-                <br/>
-                <br/>Click on the silhouettes below to see our team bios!
             </h2>
-            <div class="silhouettes_flex">
-                <a href="natalie.html">
-                    <div class="silhouettes_flex_div">
+            <h2 id="weAreBefore" class="thePlanet">
+                We are very passionate about the planet and will arm you with the knowledge
+                and skills you require to start to live<br/> your life in harmony with the planet.
+                <br/>
+                <!--
+                <br/>Click on the silhouettes below to see our team bios!
+                -->
+            </h2>
+            <div class="silhouettes_flex" >
+                <a href="natalie.html" >
+                    <div class="silhouettes_flex_div" >
                         <img id="silhouette1" class="silhouettes_img" src="res/team/flippedNATALIE.png" />
                     </div>
                 </a>
@@ -90,16 +93,41 @@
                     <img id="silhouette23" class="silhouettes_img" src="res/team/flippedQUESTION%20MARK.png" />
                 </div>
             </div>
-            <footer class="letsWork">
-                LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!
-            </footer>
+            <h2 id="weAreAfter" class="thePlanet">
+                We are very passionate about the planet and will arm you with the knowledge
+                <br/>and skills you require to start to live your life in harmony with the planet.
+                <br/>
+                <!--
+                <br/>Click on the silhouettes below to see our team bios!
+                -->
+            </h2>
         </div>
     </div>
 
     <script src="team.js"></script>
     <script>
+        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
+            //document.getElementsByClassName("letsWork")[0].innerHTML =  "";
+            document.getElementById("weAreBefore").innerHTML = "";
+            document.getElementById("weAreAfter").innerHTML = "We are very passionate about the planet and will arm you with the knowledge and skills you require to start to live<br/> your life in harmony with the planet.<br/>";
+        } else {
+            //document.getElementsByClassName("letsWork")[0].innerHTML =  "LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!";
+            document.getElementById("weAreAfter").innerHTML = "";
+            document.getElementById("weAreBefore").innerHTML = "We are very passionate about the planet and will arm you with the knowledge and skills you require to start to live<br/> your life in harmony with the planet.<br/>";
+        }
+
         function five3or44(e) {
-            console.log(window.outerWidth, window.outerHeight);
+            console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
+            
+            if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
+                //document.getElementsByClassName("letsWork")[0].innerHTML =  "";
+                document.getElementById("weAreBefore").innerHTML = "";
+                document.getElementById("weAreAfter").innerHTML = "We are very passionate about the planet and will arm you with the knowledge and skills you require to start to live<br/> your life in harmony with the planet.<br/>";
+            } else {                
+                //document.getElementsByClassName("letsWork")[0].innerHTML =  "LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!";
+                document.getElementById("weAreAfter").innerHTML = "";
+                document.getElementById("weAreBefore").innerHTML = "We are very passionate about the planet and will arm you with the knowledge and skills you require to start to live<br/> your life in harmony with the planet.<br/>";
+            }
         }
         
     </script>

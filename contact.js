@@ -4,22 +4,21 @@ function solveOverflow(e) {
     }
 }
 
-function toggleChoice(n) {
+function toggleChoice(n, type) {
     var docs = document.getElementsByClassName('typeEnquiry_form_flex_div_rectangle');
     Array.from(docs).forEach(function (doc) {
         doc.src = "res/roundedRectangle.png";
     });
     docs[n].src = "res/roundedRectangleGreen.png";
+    
+    document.getElementById("inputType").value = type;
+    console.log(document.getElementById("inputType").value);
 }
 
 function checkColorEnquiry(e) {
     if (window.location.href.includes('#enquiryBox')) {
-        toggleChoice(2);
+        toggleChoice(2, 'news/other');
     }
     
-    if(window.screen.width < window.screen.height) {
-            document.getElementsByTagName("h1")[0].innerHTML = "<span style='color: #928F1B'>CONTACT</span> US: <pre></pre>hello<span style='color: #928F1B'>@</span>liveinharmony.co.uk";
-    }
-        
     console.log(document.getElementsByTagName("h1")[0].innerHTML);
 }

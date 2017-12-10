@@ -128,7 +128,7 @@ a {
         content: "";
         display: block;
         width: 3.83vw;
-        height: 0.6vw;
+        height: 1px;
         background: #928F1B;
         position: absolute;
         margin-top: 7.775vw;
@@ -297,7 +297,7 @@ a {
         content: '';
         display: block;
         width: 3.83vw;
-        height: 0.11vw;
+        height: 2px;
         background: #928F1B;
         position: absolute;
         margin-top: 4.75vw;

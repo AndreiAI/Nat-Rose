@@ -64,10 +64,10 @@
     <script>
         document.getElementById("thePlanetMarginTop").value = 22.66;
         document.getElementById("thePlanetFontSize").value = 2.2;
-        document.getElementById("silhouettesMarginTop").value = 25.33;
+        document.getElementById("silhouettesMarginTop").value = 34.2;
         document.getElementById("silhouettesMargins").value = 10.5;
         document.getElementById("silhouetteMargins").value = 1.84;
-        document.getElementById("silhouetteSize").value = 14;
+        document.getElementById("silhouetteSize").value = 14.5;
         document.getElementById("letsMarginTop").value = 1.5;
         document.getElementById("letsFontSize").value = 2.2;
         
@@ -101,7 +101,7 @@
                     <a href=""><span>Team</span></a>
                 </div>
                 <div class="nav_flex_div1">
-                    <span>Contact</span>
+                    <a href="contact.html"><span>Contact</span></a>
                 </div>
             </nav>
             <h1>
@@ -111,10 +111,14 @@
                 Our team has been carefully selected and consists of individuals with<br/>experience in design, catering, engineering, environmental studies, education,
                 <br/>science, cycling and sport.<br/>
                 <br/>
+            </h2>
+            <h2 id="weAreBefore" class="thePlanet">
                 We are very passionate about the planet and will arm you with the knowledge
                 <br/>and skills you require to start to live your life in harmony with the planet.
                 <br/>
+                <!--
                 <br/>Click on the silhouettes below to see our team bios!
+                -->
             </h2>
             <div class="silhouettes_flex">
                 <a href="natalie.html">
@@ -156,30 +160,46 @@
                     <img id="silhouette23" class="silhouettes_img" src="res/team/flippedQUESTION%20MARK.png" />
                 </div>
             </div>
-            <h2 class="letsWork">
-                LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!
+            <h2 id="weAreAfter" class="thePlanet">
+                We are very passionate about the planet and will arm you with the knowledge
+                <br/>and skills you require to start to live your life in harmony with the planet.
+                <br/>
+                <!--
+                <br/>Click on the silhouettes below to see our team bios!
+                -->
             </h2>
+            <footer class="letsWork">
+                LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!
+            </footer>
         </div>
     </div>
+
+    <script src="team.js"></script>
     <script>
+        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
+            document.getElementsByClassName("letsWork")[0].innerHTML =  "";
+            document.getElementById("weAreBefore").innerHTML = "";
+            document.getElementById("weAreAfter").innerHTML = "We are very passionate about the planet and will arm you with the knowledge                <br/>and skills you require to start to live your life in harmony with the planet.<br/>";
+        } else {
+            document.getElementsByClassName("letsWork")[0].innerHTML =  "LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!";
+            document.getElementById("weAreAfter").innerHTML = "";
+            document.getElementById("weAreBefore").innerHTML = "We are very passionate about the planet and will arm you with the knowledge                <br/>and skills you require to start to live your life in harmony with the planet.<br/>";
+        }
+
         function five3or44(e) {
-            console.log(window.outerWidth, window.outerHeight);
-            if(window.outerWidth > window.outerHeight) {
-                document.getElementById("lastFirstRow").style.display = "block";
-                document.getElementById("firstLastRow").style.display = "none";
-            } else {
-                document.getElementById("lastFirstRow").style.display = "none";
-                document.getElementById("firstLastRow").style.display = "block";
+            console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
+            
+            if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
+                document.getElementsByClassName("letsWork")[0].innerHTML =  "";
+                document.getElementById("weAreBefore").innerHTML = "";
+                document.getElementById("weAreAfer").innerHTML = "We are very passionate about the planet and will arm you with the knowledge                <br/>and skills you require to start to live your life in harmony with the planet.<br/>";
+            } else {                
+                document.getElementsByClassName("letsWork")[0].innerHTML =  "LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!";
+                document.getElementById("weAreAfter").innerHTML = "";
+                document.getElementById("weAreBefore").innerHTML = "We are very passionate about the planet and will arm you with the knowledge                <br/>and skills you require to start to live your life in harmony with the planet.<br/>";
             }
         }
         
-        if(window.outerWidth > window.outerHeight) {
-            document.getElementById("lastFirstRow").style.display = "block";
-            document.getElementById("firstLastRow").style.display = "none";
-        } else {
-            document.getElementById("lastFirstRow").style.display = "none";
-            document.getElementById("firstLastRow").style.display = "block";
-        }
     </script>
 </body>
 
