@@ -4,16 +4,48 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Live In Harmony - Natalie</title>
     <link rel="stylesheet" href="onePage.css" />
     <link rel="stylesheet" href="navBar.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="bios.css" />
+    <script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
+    <script>
+        function GoBack() {
+            if(document.referrer.includes("liveinharmony")) window.history.back(); else window.location.href = "https://liveinharmony.co.uk/test/";
+        }
+    </script>
 </head>
 
-<body>
-    <div class="homepageLayer1">
-        <div class="homepageLayer2">
+<body onresize="navDisplay(this);">
+    <div class="homepageLayer1"  onresize="navDisplay(this);" >
+        <div class="homepageLayer2" id="container">
+            <div id="navMob" style="display: none;"  >
+                <div>
+                    <img id="menuButton" src="res/hamburgerMenu.png">
+                </div>
+                <ul id="menu">
+
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="About">About</a>
+                    </li>
+                    <li>
+                        <a href="mission.html" title="Mission">Mission</a>
+                    </li>
+                    <li>
+                        <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="team.html" title="Team">Team</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <nav class="nav_flex">
                 <div class="nav_flex_div0">
                     <a href="."><span>Home</span></a>
@@ -24,7 +56,7 @@
                 <div class="nav_flex_div0">
                     <a href="mission.html"><span>Mission</span></a>
                 </div>
-                <div class="logo">
+                <div class="logo" onclick="GoBack();">
                     <img class="logoImage" src="res/logo.png" />
                 </div>
                 <div class="nav_flex_div1">
@@ -37,10 +69,10 @@
                     <a href="contact.html"><span>Contact</span></a>
                 </div>
             </nav>
-            <h1>
+            <h1 id="header">
                 <span style="color: #928F1B">NATALIE</span> ROSE, <span style="font-family: AvenirBook; font-weight: normal;">founder</span>
             </h1>
-            <article>
+            <article id="article">
                 <p>
                     Natalie Rose, Founder of Live in Harmony, is responsible for driving forward the company’s ethos for innovation and development. The blend of courses and delivery, coupled with a real understanding of the planet and humanity has proven to be a successful and highly competitive proposition for the company.
                 </p>
@@ -54,13 +86,58 @@
                     Natalie has not only travelled the world extensively but has cycled from London to Paris, raced in Belgium, Italy and the US and partook in the first stage of the Tour de France. She also runs, climbs, horse-rides and participated in the 24-hour ‘Three Peaks Challenge’ for charity.
                 </p>                
             </article>
-            <h1 class="comingSoon">
-                <span style="color: #928F1B; font-family: AvenirHeavy;">BIOS</span>, <span style="font-family: AvenirBook; font-weight: normal;">coming soon...</span>
+            <!--
+            <h1 class="comingSoon" id="comingSoon">
+                <span style="color: #928F1B; font-family: AvenirHeavy;">BIO</span>, <span style="font-family: AvenirBook; font-weight: normal;">coming soon...</span>
             </h1>
+            -->
         </div>
     </div>
 
 </body>
+    
+<script>
+    function hideMenuButton(){
+        document.getElementById("menuButton").style.display = "none";
+        document.getElementById("menu").style.display = "block";
+    }
+        
+    function getMenuButton(){
+        document.getElementById("menuButton").style.display = "block";
+        document.getElementById("menu").style.display = "none";
+    }
+    
+    $('#menuButton').click(function (evt) {
+        evt.stopPropagation();
+        
+        hideMenuButton();
+    });
+    
+    
+    $('.homepageLayer2').click(function (evt) {
+        evt.stopPropagation();
+        
+        getMenuButton();
+    });
+    
+    if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("navMob").style.display =  "block";
+    } else {
+        document.getElementById("navMob").style.display =  "none";
+    }
+    
+    function navDisplay(e) {
+        console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
+
+        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display =  "block";
+        } else {
+            document.getElementById("navMob").style.display =  "none";
+        }
+    }
+    
+    //window.addEventListener("resize", navDisplay);
+</script>
 
 
 </html>

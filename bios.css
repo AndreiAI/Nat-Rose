@@ -3,7 +3,6 @@
 
 @media all and (max-aspect-ratio: 1/1) {
 
-  
     h1{
         text-align: left;
         left: 4.66vw;
@@ -21,12 +20,14 @@
     }
 
     .comingSoon {
-        position:relative;
+        position: relative;
         text-align: left;
-        left:4.66vw;
+        left: 4.66vw;
         font-size: 3vw;
         font-family: AvenirBook;
-        top: 92vw;
+        /*top: 92vw;*/
+        
+        margin-top: 90vw;   
     }
 
     article {
@@ -70,8 +71,9 @@
 
     .comingSoon {
         
-        position: absolute;
-        top: 46vw;
+        position: relative;
+        /*top: 46vw;*/
+        margin-top: 16vw;
         text-align: left;
         left: 15.66vw;
         font-size: 1.3vw;

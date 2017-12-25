@@ -4,16 +4,50 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Live In Harmony - Newsletter</title>
     <link rel="stylesheet" href="onePage.css" />
     <link rel="stylesheet" href="navBar.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="newsletter.css" />
+    <script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
+
+    <script>
+        function GoBack() {
+            if (document.referrer.includes("liveinharmony")) window.history.back();
+            else window.location.href = "https://liveinharmony.co.uk/test/";
+        }
+    </script>
 </head>
 
-<body>
+<body onresize="navDisplay(this);">
     <div class="homepageLayer1">
         <div class="homepageLayer2">
+            <div id="navMob" style="display: none;">
+                <div>
+                    <img id="menuButton" src="res/hamburgerMenu.png">
+                </div>
+                <ul id="menu">
+
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="About">About</a>
+                    </li>
+                    <li>
+                        <a href="mission.html" title="Mission">Mission</a>
+                    </li>
+                    <li>
+                        <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="team.html" title="Team">Team</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <nav class="nav_flex">
                 <div class="nav_flex_div0">
                     <a href="."><span>Home</span></a>
@@ -24,7 +58,7 @@
                 <div class="nav_flex_div0">
                     <a href="mission.html"><span>Mission</span></a>
                 </div>
-                <div class="logo">
+                <div class="logo" onclick="GoBack();">
                     <img class="logoImage" src="res/logo.png" />
                 </div>
                 <div class="nav_flex_div1">
@@ -38,8 +72,7 @@
                 </div>
             </nav>
             <h1>
-                <span style="color: #928F1B">SIGN-UP</span> FOR OUR 
-                <pre></pre>NEWSLETTER
+                <span style="color: #928F1B">NEWSLETTER</span>!
             </h1>
             <article>
                 <p>We will keep you informed of 'Live in Harmony's' progress, new changes to our website, upcoming events, an e-book with all our favourite recipes and much, much, more.</p>
@@ -49,6 +82,47 @@
     </div>
 
 </body>
+<script>
+    function hideMenuButton() {
+        document.getElementById("menuButton").style.display = "none";
+        document.getElementById("menu").style.display = "block";
+    }
 
+    function getMenuButton() {
+        document.getElementById("menuButton").style.display = "block";
+        document.getElementById("menu").style.display = "none";
+    }
+
+    $('#menuButton').click(function(evt) {
+        evt.stopPropagation();
+
+        hideMenuButton();
+    });
+
+
+    $('.homepageLayer2').click(function(evt) {
+        evt.stopPropagation();
+
+        getMenuButton();
+    });
+
+    if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("navMob").style.display = "block";
+    } else {
+        document.getElementById("navMob").style.display = "none";
+    }
+
+    function navDisplay(e) {
+        console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
+
+        if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display = "block";
+        } else {
+            document.getElementById("navMob").style.display = "none";
+        }
+    }
+
+    //window.addEventListener("resize", navDisplay);
+</script>
 
 </html>

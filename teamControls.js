@@ -48,15 +48,15 @@ function silhouetteSize(e) {
 }
 
 function letsMarginTop(e) {
-    var all = document.getElementsByClassName('letsWork');
+    var all = document.getElementsByClassName('thePlanet2');
 
     for (var i = 0; i < all.length; i++) {
-        all[i].style.bottom = e.value + "vw";
+        all[i].style.marginTop = e.value + "vw";
     }
 }
 
 function letsFontSize(e) {
-    var all = document.getElementsByClassName('letsWork');
+    var all = document.getElementsByClassName('thePlanet2');
 
     for (var i = 0; i < all.length; i++) {
         all[i].style.fontSize = e.value + "vw";

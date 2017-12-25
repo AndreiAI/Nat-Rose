@@ -1,13 +1,35 @@
-.arrowBack {
-    display: none;
-    position: fixed;
-    content: url(res/arrow5.png);
-    bottom: 16.42vw;
-    right: 1.91vw;
-    width: 2.22vw;
-    height: 2.22vw;
+
+@media all and (max-aspect-ratio: 1/1) {
+    .arrowBack {
+        display: none;
+        position: fixed;
+        content: url(res/arrow5.png);
+        top: 30.42vw;
+        right: 0.5vw;
+        width: 5.22vw;
+        height: 5.22vw;
+    }
+
+    .arrowBack:hover {
+        content: url(res/arrow5Green.png);
+    }
+
 }
 
-.arrowBack:hover {
-    content: url(res/arrow5Green.png);
+
+@media all and (min-aspect-ratio: 1/1) {
+    .arrowBack {
+        display: none;
+        position: fixed;
+        content: url(res/arrow5.png);
+        bottom: 16.42vw;
+        right: 1.91vw;
+        width: 2.22vw;
+        height: 2.22vw;
+    }
+
+    .arrowBack:hover {
+        content: url(res/arrow5Green.png);
+    }
+
 }

@@ -79,8 +79,34 @@
         document.getElementById("silhouette2Margins").value = 1.84;
         
     </script>
-    <div class="homepageLayer1">
-        <div class="homepageLayer2">
+   <div class="homepageLayer1">
+        <div class="homepageLayer2" id="container">
+            <div id="navMob" style="display: none;"  >
+                <div>
+                    <img id="menuButton" src="res/hamburgerMenu.png">
+                </div>
+                <ul id="menu">
+
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="About">About</a>
+                    </li>
+                    <li>
+                        <a href="mission.html" title="Mission">Mission</a>
+                    </li>
+                    <li>
+                        <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="team.html" title="Team">Team</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <nav class="nav_flex">
                 <div class="nav_flex_div0">
                     <a href="."><span>Home</span></a>
@@ -91,7 +117,7 @@
                 <div class="nav_flex_div0">
                     <a href="mission.html"><span>Mission</span></a>
                 </div>
-                <div class="logo">
+                <div class="logo" onclick="GoBack();">
                     <img class="logoImage" src="res/logo.png" />
                 </div>
                 <div class="nav_flex_div1">
@@ -108,100 +134,151 @@
                 <span style="color: #928F1B">MEET</span> THE TEAM
             </h1>
             <h2 class="thePlanet">
-                Our team has been carefully selected and consists of individuals with<br/>experience in design, catering, engineering, environmental studies, education,
-                <br/>science, cycling and sport.<br/>
+                Our team has been carefully selected and consists of individuals with experience in design, catering, engineering,<br/> environmental studies, education, science, cycling and sport.<br/>
                 <br/>
             </h2>
-            <h2 id="weAreBefore" class="thePlanet">
-                We are very passionate about the planet and will arm you with the knowledge
-                <br/>and skills you require to start to live your life in harmony with the planet.
-                <br/>
-                <!--
-                <br/>Click on the silhouettes below to see our team bios!
-                -->
-            </h2>
-            <div class="silhouettes_flex">
-                <a href="natalie.html">
-                    <div class="silhouettes_flex_div">
+            <div class="silhouettes_flex" >
+                <a href="natalie.html" >
+                    <div class="silhouettes_flex_div" >
                         <img id="silhouette1" class="silhouettes_img" src="res/team/flippedNATALIE.png" />
                     </div>
                 </a>
-                <div class="silhouettes_flex_div">
-                    <img id="silhouette2" class="silhouettes_img" src="res/team/BEN.png" />
-                </div>
-                <div class="silhouettes_flex_div">
-                    <img id="silhouette3" class="silhouettes_img" src="res/team/CHI.png" />
-                </div>
-                <div id="toggleLast1Ping" class="silhouettes_flex_div">
-                    <img id="silhouette4" class="silhouettes_img" src="res/team/MARC.png" />
-                </div>
-                <div id="toggleLast2Ping" class="silhouettes_flex_div">
-                    <img id="silhouette5" class="silhouettes_img" src="res/team/DANI.png" />
-                </div>
+                
+                <a href="ben.html" >
+                    <div class="silhouettes_flex_div" >
+                        <img id="silhouette2" class="silhouettes_img" src="res/team/BEN.png" />
+                    </div>
+                </a>
+                
+                <a href="chi.html" >
+                    <div class="silhouettes_flex_div" >
+                        <img id="silhouette3" class="silhouettes_img" src="res/team/CHI.png" />
+                    </div>
+                </a>
+                
+                <a href="marc.html" >
+                    <div id="toggleLast2Ping" class="silhouettes_flex_div" >
+                        <img id="silhouette4" class="silhouettes_img" src="res/team/MARC.png" />
+                    </div>
+                </a>
+                
+                <a href="dani.html" >
+                    <div id="toggleLast2Ping" class="silhouettes_flex_div" >
+                        <img id="silhouette5" class="silhouettes_img" src="res/team/DANI.png" />
+                    </div>
+                </a>
             </div>
             
             <div id="rowM" class="silhouettesM_flex">
-                <div class="silhouettesM_flex_div">
-                    <img id="silhouetteM1" class="silhouettes_img" src="res/team/MARC.png" />
-                </div>
-                <div class="silhouettesM_flex_div">
-                    <img id="silhouetteM2" class="silhouettes_img" src="res/team/DANI.png" />
-                </div>
+                <a href="marc.html" >
+                    <div class="silhouettes_flex_div" >
+                        <img id="silhouetteM1" class="silhouettes_img" src="res/team/MARC.png" />
+                    </div>
+                </a>
+                
+                <a href="dani.html" >
+                    <div class="silhouettes_flex_div" >
+                        <img id="silhouetteM2" class="silhouettes_img" src="res/team/DANI.png" />
+                    </div>
+                </a>
             </div>
             
             <div class="silhouettes2_flex">
-                <div class="silhouettes2_flex_div">
-                    <img id="silhouette21" class="silhouettes_img" src="res/team/JOHN.png" />
-                </div>
-                <div class="silhouettes2_flex_div">
-                    <img id="silhouette22" class="silhouettes_img" src="res/team/flippedPAGE.png" />
-                </div>
-                <div class="silhouettes2_flex_div">
-                    <img id="silhouette23" class="silhouettes_img" src="res/team/flippedQUESTION%20MARK.png" />
-                </div>
+                <a href="john.html" >
+                    <div class="silhouettes2_flex_div" >
+                        <img id="silhouette21" class="silhouettes_img" src="res/team/JOHN.png" />
+                    </div>
+                </a>
+                
+                <a href="page.html" >
+                    <div class="silhouettes2_flex_div" >
+                        <img id="silhouette22" class="silhouettes_img" src="res/team/flippedPAGE.png" />
+                    </div>
+                </a>
+                
+                <a href="mark.html" >
+                    <div class="silhouettes2_flex_div" >
+                        <img id="silhouette23" class="silhouettes_img" src="res/team/flippedQUESTION%20MARK.png" />
+                    </div>
+                </a>
             </div>
-            <h2 id="weAreAfter" class="thePlanet">
-                We are very passionate about the planet and will arm you with the knowledge
-                <br/>and skills you require to start to live your life in harmony with the planet.
-                <br/>
-                <!--
-                <br/>Click on the silhouettes below to see our team bios!
-                -->
+            <h2 class="thePlanet2" id="weAreAfter">
             </h2>
-            <footer class="letsWork">
-                LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!
-            </footer>
         </div>
     </div>
 
     <script src="team.js"></script>
     <script>
         if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
-            document.getElementsByClassName("letsWork")[0].innerHTML =  "";
-            document.getElementById("weAreBefore").innerHTML = "";
-            document.getElementById("weAreAfter").innerHTML = "We are very passionate about the planet and will arm you with the knowledge                <br/>and skills you require to start to live your life in harmony with the planet.<br/>";
+            //document.getElementsByClassName("letsWork")[0].innerHTML =  "";
+            //document.getElementById("weAreBefore").innerHTML = "";
+            document.getElementById("weAreAfter").innerHTML = "We are very passionate about the planet and will arm you with the knowledge and skills you require to start to live your life in harmony with the planet.";
         } else {
-            document.getElementsByClassName("letsWork")[0].innerHTML =  "LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!";
+            //document.getElementsByClassName("letsWork")[0].innerHTML =  "LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!";
             document.getElementById("weAreAfter").innerHTML = "";
-            document.getElementById("weAreBefore").innerHTML = "We are very passionate about the planet and will arm you with the knowledge                <br/>and skills you require to start to live your life in harmony with the planet.<br/>";
+            //document.getElementById("weAreBefore").innerHTML = "We are very passionate about the planet and will arm you with the knowledge and skills you require to start to live your life in harmony with the planet.";
         }
 
         function five3or44(e) {
             console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
             
             if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
-                document.getElementsByClassName("letsWork")[0].innerHTML =  "";
-                document.getElementById("weAreBefore").innerHTML = "";
-                document.getElementById("weAreAfer").innerHTML = "We are very passionate about the planet and will arm you with the knowledge                <br/>and skills you require to start to live your life in harmony with the planet.<br/>";
+                //document.getElementsByClassName("letsWork")[0].innerHTML =  "";
+                //document.getElementById("weAreBefore").innerHTML = "";
+                document.getElementById("weAreAfter").innerHTML = "We are very passionate about the planet and will arm you with the knowledge and skills you require to start to live your life in harmony with the planet.";
             } else {                
-                document.getElementsByClassName("letsWork")[0].innerHTML =  "LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!";
+                //document.getElementsByClassName("letsWork")[0].innerHTML =  "LETS WORK TOGETHER TO CREATE<pre></pre>A BETTER WORLD!";
                 document.getElementById("weAreAfter").innerHTML = "";
-                document.getElementById("weAreBefore").innerHTML = "We are very passionate about the planet and will arm you with the knowledge                <br/>and skills you require to start to live your life in harmony with the planet.<br/>";
+                //document.getElementById("weAreBefore").innerHTML = "We are very passionate about the planet and will arm you with the knowledge and skills you require to start to live your life in harmony with the planet.";
+            }
+            
+            if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+                document.getElementById("navMob").style.display =  "block";
+            } else {
+                document.getElementById("navMob").style.display =  "none";
             }
         }
-        
+
+        function hideMenuButton(){
+            document.getElementById("menuButton").style.display = "none";
+            document.getElementById("menu").style.display = "block";
+        }
+
+        function getMenuButton(){
+            document.getElementById("menuButton").style.display = "block";
+            document.getElementById("menu").style.display = "none";
+        }
+
+        $('#menuButton').click(function (evt) {
+            evt.stopPropagation();
+
+            hideMenuButton();
+        });
+
+
+        $('.homepageLayer2').click(function (evt) {
+            evt.stopPropagation();
+
+            getMenuButton();
+        });
+
+        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display =  "block";
+        } else {
+            document.getElementById("navMob").style.display =  "none";
+        }
+
+        function navDisplay(e) {
+            console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
+
+            if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+                document.getElementById("navMob").style.display =  "block";
+            } else {
+                document.getElementById("navMob").style.display =  "none";
+            }
+        }
+
+        //window.addEventListener("resize", navDisplay);
     </script>
 </body>
-
-
 </html>

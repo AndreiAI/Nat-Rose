@@ -4,18 +4,51 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Live In Harmony - Grow</title>
     <link rel="stylesheet" href="growPage.css" />
     <link rel="stylesheet" href="navBar.css" />
     <link rel="stylesheet" href="arrowScroll.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="grow.css" />
+    <script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
+    
+    <script>
+        function GoBack() {
+            if(document.referrer.includes("liveinharmony")) window.history.back(); else window.location.href = "https://liveinharmony.co.uk/test/";
+        }
+    </script>
 </head>
 
 <body onscroll="onScroll(this);">
-    <div class="homepageLayer1">
-        <div class="homepageLayer2">
+    <div class="homepageLayer1"  onresize="navDisplay(this);" >
+        <div class="homepageLayer2" id="container">
+            <div id="navMob" style="display: none;"  >
+                <div>
+                    <img id="menuButton" src="res/hamburgerMenu.png">
+                </div>
+                <ul id="menu">
+
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="About">About</a>
+                    </li>
+                    <li>
+                        <a href="mission.html" title="Mission">Mission</a>
+                    </li>
+                    <li>
+                        <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="team.html" title="Team">Team</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <nav class="nav_flex">
                 <div class="nav_flex_div0">
                     <a href="."><span>Home</span></a>
@@ -26,7 +59,7 @@
                 <div class="nav_flex_div0">
                     <a href="mission.html"><span>Mission</span></a>
                 </div>
-                <div class="logo">
+                <div class="logo" onclick="GoBack();">
                     <img class="logoImage" src="res/logo.png" />
                 </div>
                 <div class="nav_flex_div1">
@@ -44,7 +77,7 @@
             </h1>
             <article>
                 <p>Contrary to popular belief, growing your own food is very simple, if you are given the knowledge to do so. We believe that seasonal fruit and vegetables not only reduce your carbon footprint but taste absolutely amazing. Therefore, we feel everyone should have the ability to grow their own food, especially in today's society. </p>
-                <p>We will teach you all the skills you need so when they return home, you have all you require to transform your own garden and, life. Not only will you be given hands on expertise/tips when to plant your fruit and vegetables but we will also show you how to turn your produce into tasty dishes for when you harvest the results.</p>
+                <p>We will teach you all the skills you need so when you return home, you have all you require to transform your own garden and, life. Not only will you be given hands on expertise/tips when to plant your fruit and vegetables but we will also show you how to turn your produce into tasty dishes for when you harvest the results.</p>
                 <p>In the coming months, we will be creating a free e-book with all our favourite recipes – all you need to do is <a style="color: #928F1B" href="newsletter.html">sign-up</a> to our newsletter.</p>
                 <img class="img1" src='res/grow0.jpg'>
                 <p>Over the last 10 years, the bee population has declined considerably, to the point where some species are now on the endangered list. What with the change in weather, electromagnetic waves/frequencies, pesticides and lack of food, it is becoming increasingly more important we find ways to preserve these magnificent insects, without them, humanity will struggle to survive! </p>
@@ -58,5 +91,46 @@
 
 </body>
 
+<script>
+    function hideMenuButton(){
+        document.getElementById("menuButton").style.display = "none";
+        document.getElementById("menu").style.display = "block";
+    }
+        
+    function getMenuButton(){
+        document.getElementById("menuButton").style.display = "block";
+        document.getElementById("menu").style.display = "none";
+    }
+    
+    $('#menuButton').click(function (evt) {
+        evt.stopPropagation();
+        
+        hideMenuButton();
+    });
+    
+    
+    $('.homepageLayer2').click(function (evt) {
+        evt.stopPropagation();
+        
+        getMenuButton();
+    });
+    
+    if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("navMob").style.display =  "block";
+    } else {
+        document.getElementById("navMob").style.display =  "none";
+    }
+    
+    function navDisplay(e) {
+        console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
 
+        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display =  "block";
+        } else {
+            document.getElementById("navMob").style.display =  "none";
+        }
+    }
+    
+    //window.addEventListener("resize", navDisplay);
+</script>
 </html>

@@ -1,4 +1,3 @@
-
 @media all and (max-aspect-ratio: 1/1) {
 
     .nav_flex:not(:hover) .nav_flex_div1:nth-child(6) {
@@ -11,7 +10,20 @@
         text-align: center;
         font-size: 2.5vw;
         font-weight: normal;
-        top: 22.66vw;
+        top: 28.66vw;
+        /*added 6*/
+        width: 75vw;
+        margin: 0 auto;
+    }
+
+    .thePlanet2 {
+        position: relative;
+        text-align: center;
+        font-size: 2.5vw;
+        font-weight: normal;
+        top: 13.66vw;
+        /*added 6*/
+        width: 75vw;
         margin: 0 auto;
     }
 
@@ -19,7 +31,8 @@
         display: flex;
         flex-basis: auto;
         justify-content: center;
-        margin-top: 34.2vw;
+        margin-top: 33.47vw;
+        /*40.2*/
         margin-left: 10.5vw;
         margin-right: 10.5vw;
     }
@@ -32,7 +45,7 @@
         font-size: 1.38vw;
         cursor: pointer;
     }
-/*
+    /*
     .silhouettes_flex_div:after {
         content: '';
         position: relative;
@@ -56,7 +69,6 @@
         top: 1.26vw;
     }
 */
-
     .silhouettes_img {
         position: relative;
         width: 14.5vw;
@@ -85,7 +97,6 @@
         top: 1.423125vw;
     }
     */
-
     #silhouette4 {
         top: 1.87vw;
         left: 0.33vw;
@@ -113,7 +124,7 @@
         font-size: 1.38vw;
         cursor: pointer;
     }
-/*
+    /*
     .silhouettes2_flex_div:after {
         content: '';
         position: relative;
@@ -156,11 +167,11 @@
     #toggleLast1Ping {
         display: none;
     }
-    
+
     #toggleLast2Ping {
         display: none;
     }
-    
+
     .silhouettesM_flex {
         display: flex;
         flex-basis: auto;
@@ -178,7 +189,7 @@
         font-size: 1.38vw;
         cursor: pointer;
     }
-    
+
     #silhouetteM1 {
         top: 0.13vw;
         left: 0.5vw;
@@ -189,7 +200,6 @@
         left: 0.37vw;
     }
 
-    
     .letsWork {
         position: absolute;
         text-align: center;
@@ -210,16 +220,18 @@
         text-align: center;
         font-size: 1.01vw;
         font-weight: normal;
-        top: 9.66vw;
+        top: 10.43vw;
+        /*9.66*/
         margin: 0 auto;
-        
+
     }
 
     .silhouettes_flex {
         display: flex;
         flex-basis: auto;
         justify-content: center;
-        margin-top: 10.254375vw;
+        margin-top: 10.23vw;
+        /*10.000*/
         margin-left: 20.5vw;
         margin-right: 20.5vw;
     }
@@ -237,12 +249,12 @@
     #toggleLast1Ping {
         display: block;
     }
-    
+
     #toggleLast2Ping {
         display: block;
     }
-    
-    
+
+
     /*
     #silhouette1:hover {
         content: url(res/team/NATALIEGreen.png);
@@ -264,7 +276,7 @@
         content: url(res/team/PAGEGreen.png);
     }
     */
-/*
+    /*
     .silhouettes_flex_div:after {
         content: '';
         position: relative;
@@ -288,7 +300,6 @@
         top: 1.26vw;
     }
 */
-
     /*
     .silhouettes_flex_div:nth-child(1):before {
         content: 'NATALIE';
@@ -384,7 +395,6 @@
         margin-top: 6.1vw;
         color: #928F1B;
     }*/
-
     .silhouettes_img {
         position: relative;
         width: 7vw;
@@ -413,7 +423,6 @@
         top: 1.423125vw;
     }
     */
-
     #silhouette4 {
         top: 1.87vw;
         left: 0.33vw;
@@ -441,7 +450,7 @@
         font-size: 1.38vw;
         cursor: pointer;
     }
-/*
+    /*
     .silhouettes2_flex_div:after {
         content: '';
         position: relative;
@@ -466,7 +475,6 @@
         top: 0.1575vw;
     }
 */
-
     /*
     .silhouettes2_flex_div:nth-child(1):before {
         content: 'JOHN';
@@ -524,7 +532,6 @@
         margin-top: 6.1vw;
         color: #928F1B;
     }*/
-
     #silhouette21 {
         top: 0.13vw;
         left: 0.5vw;
@@ -539,7 +546,7 @@
         top: 0.04vw;
         left: 0.61vw;
     }
-    
+
     .silhouettesM_flex {
         display: none;
         flex-basis: auto;
@@ -557,7 +564,7 @@
         font-size: 1.38vw;
         cursor: pointer;
     }
-    
+
     #silhouetteM1 {
         top: 0.13vw;
         left: 0.5vw;

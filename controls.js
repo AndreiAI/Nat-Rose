@@ -1,3 +1,41 @@
+/*
+<input id="navMenuTop" type="number" step="0.01" onchange="navMenuTop(this)" /><br/>
+        <!-- done -->
+        <label>Menu: left margin</label>
+        <input id="navMenuLeft" type="number" step="0.01" onchange="navMenuLeft(this)" /><br/>
+        <!-- done -->
+        <label>Menu: border thickness</label>
+        <input id="navMenuBorderThickness" type="number" step="0.01" onchange="navMenuBorderThickness(this)" /><br/>
+        <!-- done -->
+        <label>Menu: border color</label>
+        <input id="navMenuBorderColor" type="color" onchange="navMenuBorderColor(this)" value="#D9D9D9" /><br/>
+            
+            */
+
+function navMenuTop(e) {
+    var all = document.getElementById("menu");
+    
+    all.style.top = e.value + "vw";
+}
+
+function navMenuLeft(e) {
+    var all = document.getElementById("menu");
+    
+    all.style.left = e.value + "vw";
+}
+
+function navMenuBorderThickness(e) {
+    var all = document.getElementById("menu");
+    
+    all.style.borderWidth = e.value + "vw";
+}
+
+function navMenuBorderColor(e) {
+    var all = document.getElementById("menu");
+    
+    all.style.borderColor = e.value;
+}
+
 function navweight(e) {
     var all = document.getElementsByClassName('nav_flex');
 

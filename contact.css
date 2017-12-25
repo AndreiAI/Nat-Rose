@@ -1,6 +1,4 @@
-
 @media all and (max-aspect-ratio: 1/1) {
-
     h1 {
         position: absolute;
         margin-top: 0;
@@ -36,11 +34,27 @@
         align-content: center;
         font-size: 1.3vw;
     }
-    
+
+    .circle_flex_div_mobilePhone_touch {
+        position: relative;
+        margin-left: 1.4vw;
+        margin-right: 1.4vw;
+        align-content: center;
+        font-size: 1.3vw;
+    }
+
+    .circle_flex_div_mobileSkype_touch {
+        position: relative;
+        margin-left: 1.4vw;
+        margin-right: 1.4vw;
+        align-content: center;
+        font-size: 1.3vw;
+    }
+
     .circle_flex_div:nth-child(1) {
         display: none;
     }
-    
+
     .circle_flex_div:nth-child(7) {
         display: none;
     }
@@ -58,9 +72,31 @@
         height: 0.11vw;
         background: black;
         margin-left: 4.5vw;
-        margin-bottom: 0.511875vw;
+        /*margin-bottom: 0.511875vw;*/
     }
 
+    .circle_flex_div_mobilePhone_touch:after {
+        content: '';
+        position: relative;
+        display: inline-block;
+        width: 5vw;
+        height: 0.11vw;
+        background: black;
+        margin-left: 4.5vw;
+        /*margin-bottom: 0.511875vw;*/
+    }
+
+    .circle_flex_div_mobileSkype_touch:after {
+        content: '';
+        position: relative;
+        display: inline-block;
+        width: 5vw;
+        height: 0.11vw;
+        background: black;
+        margin-left: 4.5vw;
+        /*margin-bottom: 0.511875vw;*/
+    }
+    /*
     .circle_flex_div:hover:after {
         content: '';
         position: relative;
@@ -71,7 +107,7 @@
         margin-left: 4.5vw;
         margin-bottom: 0.511875vw;
     }
-
+*/
     .circle_flex_div:nth-child(1):before {
         content: 'EMAIL';
         white-space: pre;
@@ -81,7 +117,7 @@
         margin-top: 9.9vw;
         /*margin-top: 9.9vw;*/
     }
-
+    /*
     .circle_flex_div:nth-child(1):hover:before {
         content: 'EMAIL';
         white-space: pre;
@@ -92,7 +128,7 @@
         color: #928F1B;
         font-size: 2.2vw;
     }
-
+*/
     .circle_flex_div:nth-child(2):before {
         content: 'PHONE';
         white-space: pre;
@@ -103,6 +139,17 @@
         font-size: 2.2vw;
     }
 
+    .circle_flex_div_mobilePhone_touch:before {
+        content: '+44 (0)7792 512 984';
+        white-space: pre;
+        text-align: center;
+        width: 14vw;
+        position: absolute;
+        right: 3vw;
+        margin-top: 16vw;
+        font-size: 2.2vw;
+    }
+    /*
     .circle_flex_div:nth-child(2):hover:before {
         content: 'PHONE';
         white-space: pre;
@@ -112,7 +159,7 @@
         margin-top: 16vw;
         color: #928F1B;
     }
-
+*/
     .circle_flex_div:nth-child(3):before {
         content: 'TWITTER';
         white-space: pre;
@@ -122,7 +169,7 @@
         margin-top: 16vw;
         font-size: 2.2vw;
     }
-
+    /*
     .circle_flex_div:nth-child(3):hover:before {
         content: 'TWITTER';
         white-space: pre;
@@ -133,7 +180,7 @@
         color: #928F1B;
         font-size: 2.2vw;
     }
-
+*/
     .circle_flex_div:nth-child(4):before {
         content: 'VOLUNTEER';
         white-space: pre;
@@ -143,7 +190,7 @@
         margin-top: 16vw;
         font-size: 2.2vw;
     }
-
+    /*
     .circle_flex_div:nth-child(4):hover:before {
         content: 'VOLUNTEER';
         white-space: pre;
@@ -153,7 +200,7 @@
         margin-top: 16vw;
         color: #928F1B;
     }
-
+*/
     .circle_flex_div:nth-child(5):before {
         content: 'SKYPE';
         white-space: pre;
@@ -164,6 +211,16 @@
         font-size: 2.2vw;
     }
 
+    .circle_flex_div_mobileSkype_touch:before {
+        content: 'Live In Harmony';
+        white-space: pre;
+        text-align: center;
+        width: 14vw;
+        position: absolute;
+        margin-top: 16vw;
+        font-size: 2.2vw;
+    }
+    /*
     .circle_flex_div:nth-child(5):hover:before {
         content: 'SKYPE';
         white-space: pre;
@@ -173,7 +230,7 @@
         margin-top: 16vw;
         color: #928F1B;
     }
-
+*/
     .circle_flex_div:nth-child(6):before {
         content: 'LINKEDIN';
         white-space: pre;
@@ -183,7 +240,7 @@
         margin-top: 16vw;
         font-size: 2.2vw;
     }
-
+    /*
     .circle_flex_div:nth-child(6):hover:before {
         content: 'LINKEDIN';
         white-space: pre;
@@ -193,7 +250,7 @@
         margin-top: 16vw;
         color: #928F1B;
     }
-
+*/
     .circle_flex_div:nth-child(7):before {
         content: 'NEWSLETTER';
         white-space: pre;
@@ -203,7 +260,7 @@
         margin-top: 16vw;
         font-size: 2.2vw;
     }
-
+    /*
     .circle_flex_div:nth-child(7):hover:before {
         content: 'NEWSLETTER';
         white-space: pre;
@@ -213,7 +270,7 @@
         margin-top: 16vw;
         color: #928F1B;
     }
-
+*/
     .circle_img_img {
         position: absolute;
         height: 7vw;
@@ -271,7 +328,7 @@
     form * {
         font-size: 2.2vw;
     }
-    
+
     .yourDetails {
         position: relative;
         text-align: center;
@@ -290,7 +347,7 @@
         display: flex;
         flex-basis: auto;
         justify-content: center;
-        margin-top: 1.24875vw;
+        margin-top: 2.09vw;
         margin-left: 6.07vw;
         margin-right: 6.07vw;
     }
@@ -332,7 +389,7 @@
         color: white;
     }
 
-    .yourDetails_form_flex_div>input {
+    .yourDetails_form_flex_div > input {
         position: absolute;
         min-width: 15vw;
         font-size: 1.7vw;
@@ -384,7 +441,7 @@
         height: 5.55vw;
     }
 
-    .typeEnquiry_form_flex_div>span {
+    .typeEnquiry_form_flex_div > span {
         position: absolute;
         font-size: 1.7vw;
         top: 45%;
@@ -422,7 +479,6 @@
         margin-left: 6.585vw;
     }
     */
-
     .briefDescription {
         position: relative;
         text-align: center;
@@ -465,7 +521,7 @@
         text-align: center;
         font-weight: normal;
         margin: 0 auto;
-        top: 13.33vw;
+        top: 13.74vw;
     }
 
     .clickSubmit_rectangle {
@@ -473,7 +529,7 @@
         height: 5.11vw;
     }
 
-    .clickSubmit>span {
+    .clickSubmit > span {
         position: absolute;
         font-size: 1.7vw;
         top: 45%;
@@ -486,16 +542,19 @@
         text-align: center;
         color: white;
     }
-    
+
     footer {
-        
+
         font-size: 2.2vw;
     }
 
+    .popup {
+        display: none;
+    }
 
     /*
     Pop-ups ahead
-    */
+    
 
     .popup {
         position: absolute;
@@ -516,22 +575,6 @@
     .popup div {
         width: 15vw;
     }
-
-
-    /*
-    .popup .popupRectangle {
-        position: absolute;
-        width: 22vw;
-        height: 5.625vw;
-        top: 0.0vw;
-        z-index: -1;
-    }
-
-    .popup div{ 
-        padding: 1.6875vw 3vw 3    text-align: center;
-        color:white;
-    }
-    */
 
     .popup div {
         padding: 1.6875vw 3vw 1.6875vw 3vw;
@@ -580,6 +623,7 @@
         margin-top: -12.0375vw;
         opacity: 1;
     }
+    */
 }
 
 
@@ -903,7 +947,7 @@
         color: white;
     }
 
-    .yourDetails_form_flex_div>input {
+    .yourDetails_form_flex_div > input {
         position: absolute;
         min-width: 15vw;
         font-size: 0.99vw;
@@ -955,7 +999,7 @@
         height: 3.6vw;
     }
 
-    .typeEnquiry_form_flex_div>span {
+    .typeEnquiry_form_flex_div > span {
         position: absolute;
         font-size: 0.99vw;
         top: 45%;
@@ -993,7 +1037,6 @@
         margin-left: 6.585vw;
     }
     */
-
     .briefDescription {
         position: relative;
         text-align: center;
@@ -1043,7 +1086,7 @@
         height: 3.69vw;
     }
 
-    .clickSubmit>span {
+    .clickSubmit > span {
         position: absolute;
         font-size: 0.99vw;
         top: 45%;
@@ -1061,7 +1104,6 @@
     /*
     Pop-ups ahead
     */
-
     .popup {
         position: absolute;
         left: 5vw;
@@ -1097,7 +1139,6 @@
         color:white;
     }
     */
-
     .popup div {
         padding: 1.6875vw 3vw 1.6875vw 3vw;
         background-color: black;
@@ -1106,7 +1147,7 @@
         text-align: center;
     }
 
-    .circle_flex_div:hover>.popup {
+    .circle_flex_div:hover > .popup {
         margin-left: 2.2vw;
         margin-top: -12.0375vw;
         opacity: 1;
@@ -1123,16 +1164,16 @@
         -webkit-transition: all 1s;
     }
 
-    .popupReverse>svg {
+    .popupReverse > svg {
         margin-top: -0.16875vw;
         z-index: 1;
     }
 
-    .popupReverse>div {
+    .popupReverse > div {
         width: 15vw;
     }
 
-    .popupReverse>div {
+    .popupReverse > div {
         padding: 1.6875vw 3vw 1.6875vw 3vw;
         background-color: black;
         border-radius: 25px;
@@ -1140,7 +1181,7 @@
         text-align: center;
     }
 
-    .circle_flex_div:hover>.popupReverse {
+    .circle_flex_div:hover > .popupReverse {
         margin-left: -6.54vw;
         margin-top: -12.0375vw;
         opacity: 1;

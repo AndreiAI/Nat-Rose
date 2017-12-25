@@ -12,6 +12,6 @@
     $headers = 'From: ' . $email . "\r\n" . 'Reply-To: ' . $email . "\r\n" . 'X-Mailer: PHP/' . phpversion();
 
     // Send
-    mail('JustJordas@gmail.com', $type, $message, $headers);
+    mail('hello@liveinharmony.co.uk', $type, $message, $headers);
 
 ?>

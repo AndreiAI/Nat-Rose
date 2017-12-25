@@ -3,34 +3,67 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Live In Harmony - Contact</title>
     <link rel="stylesheet" href="twoPage.css" />
     <link rel="stylesheet" href="navBar.css" />
     <link rel="stylesheet" href="arrowScroll.css" />
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="contact.css" />
+    <script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
     <script type="text/javascript" src="contact.js"></script>
     <script>
         function submitForm() {
-            if(document.getElementById("userName").value != "" && document.getElementById("userEmail").value != "" && document.getElementById("userPhone").value != "" && document.getElementById("description").value != ""){
+            if (document.getElementById("userName").value != "" && document.getElementById("userEmail").value != "" && document.getElementById("userPhone").value != "" && document.getElementById("description").value != "") {
                 document.getElementById("submitForm").submit();
                 alert("Thank you! We will be in touch soon.");
             } else {
                 alert("Incomplete form!");
             }
         }
-        
+
         function setFocus(element) {
             document.getElementById(element).focus();
         }
+
+        function GoBack() {
+            if (document.referrer.includes("liveinharmony")) window.history.back();
+            else window.location.href = "https://liveinharmony.co.uk/test/";
+        }
+
     </script>
 </head>
 
 <body onscroll="onScroll(this);" onload="checkColorEnquiry(this);" onresize="five3or44(this);">
-    <div class="homepageLayer1">
-        <div class="homepageLayer2">
+    <div class="homepageLayer1" onresize="navDisplay(this);">
+        <div class="homepageLayer2" id="container">
+            <div id="navMob" style="display: none;">
+                <div>
+                    <img id="menuButton" src="res/hamburgerMenu.png">
+                </div>
+                <ul id="menu">
+
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="About">About</a>
+                    </li>
+                    <li>
+                        <a href="mission.html" title="Mission">Mission</a>
+                    </li>
+                    <li>
+                        <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="team.html" title="Team">Team</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" title="Contact" style="color: #928F1B;">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <nav class="nav_flex">
                 <div class="nav_flex_div0">
                     <a href="."><span>Home</span></a>
@@ -41,7 +74,7 @@
                 <div class="nav_flex_div0">
                     <a href="mission.html"><span>Mission</span></a>
                 </div>
-                <div class="logo">
+                <div class="logo" onclick="GoBack();">
                     <img class="logoImage" src="res/logo.png" />
                 </div>
                 <div class="nav_flex_div1">
@@ -56,11 +89,12 @@
             </nav>
             <h1>
                 <span style="color: #928F1B">CONTACT</span> US
-                    
+
             </h1>
 
-            <h2 class="toFind">
-                To find out more, please contact one of our team members <pre></pre> who will answer any questions you have at hello@liveinharmony.co.uk
+            <h2 class="toFind" id="header">
+                To find out more, please contact one of our team members who will answer any questions you have at
+                <pre></pre>hello@liveinharmony.co.uk
             </h2>
             <div class="circle_flex">
                 <div id="ping1" class="circle_flex_div">
@@ -75,7 +109,7 @@
                     </div>
                 </div>
 
-                <div class="circle_flex_div">
+                <div id="phonePing" class="circle_flex_div">
                     <img class="circle_img" src="res/circle.png" />
                     <img class="circle_img_img" id="ping_img2" src="res/phone.png" />
                     <div class='popup'>
@@ -98,7 +132,7 @@
                         <img class="circle_img_img" id="ping_img4" src="res/volunteer.png" />
                     </a>
                 </div>
-                <div class="circle_flex_div">
+                <div id="skypePing" class="circle_flex_div">
                     <img class="circle_img" src="res/circle.png" />
                     <img class="circle_img_img" id="ping_img6" src="res/skype.png" />
                     <div class='popup'>
@@ -123,7 +157,7 @@
                     </a>
                 </div>
             </div>
-            <iframe display="hidden" width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+            <iframe style="display: none" display="hidden" width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
             <form id="submitForm" action="sendMail.php" method="post" target="dummyframe">
                 <div class="yourDetails">
                     <span class="yourDetails_header">YOUR DETAILS!</span>
@@ -139,7 +173,7 @@
                         <div class="yourDetails_form_flex_div" onclick="setFocus('userPhone');">
                             <img class="yourDetails_form_flex_div_rectangle" src="res/roundedRectangle.png" />
                             <input id="userPhone" type="tel" name="userPhone" placeholder="PHONE NUMBER" onkeydown="solveOverflow(this);">
-                        </div>  
+                        </div>
                     </div>
                 </div>
                 <input id="inputType" type="hidden" name="type" value="tours" />
@@ -177,7 +211,7 @@
             <!--
             <img id="arrowScroll" class="arrow" onclick="scrollUp(this);" />
             -->
-            <footer id="footerContact" >
+            <footer id="footerContact">
                 <span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration
             </footer>
         </div>
@@ -188,21 +222,82 @@
 
 </script>
 <script>
-    if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
-        document.getElementById("footerContact").innerHTML =  "";
+    if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("footerContact").innerHTML = "";
+        document.getElementById("header").innerHTML = "To find out more, please contact one of our team members who will<pre></pre>answer any questions you have at hello@liveinharmony.co.uk";
     } else {
-        document.getElementById("footerContact").innerHTML =  "<span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration";
+        document.getElementById("footerContact").innerHTML = "<span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration";
+        document.getElementById("header").innerHTML = "To find out more, please contact one of our team members who will answer any questions you have at<pre></pre>hello@liveinharmony.co.uk";
     }
 
     function five3or44(e) {
         console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
 
-        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {     
-            document.getElementById("footerContact").innerHTML =  "";
+        if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("footerContact").innerHTML = "";
+            document.getElementById("header").innerHTML = "To find out more, please contact one of our team members who will<pre></pre>answer any questions you have at hello@liveinharmony.co.uk";
         } else {
-            document.getElementById("footerContact").innerHTML =  "<span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration";
+            document.getElementById("footerContact").innerHTML = "<span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration";
+            document.getElementById("header").innerHTML = "To find out more, please contact one of our team members who will answer any questions you have at<pre></pre>hello@liveinharmony.co.uk";
         }
     }
+
+</script>
+<script>
+    function hideMenuButton() {
+        document.getElementById("menuButton").style.display = "none";
+        document.getElementById("menu").style.display = "block";
+    }
+
+    function getMenuButton() {
+        document.getElementById("menuButton").style.display = "block";
+        document.getElementById("menu").style.display = "none";
+    }
+
+    $('#menuButton').click(function(evt) {
+        evt.stopPropagation();
+
+        hideMenuButton();
+    });
+
+
+    $('.homepageLayer2').click(function(evt) {
+        evt.stopPropagation();
+
+        getMenuButton();
+    });
+
+    if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("navMob").style.display = "block";
+    } else {
+        document.getElementById("navMob").style.display = "none";
+    }
+
+    function navDisplay(e) {
+        console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
+
+        if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display = "block";
+        } else {
+            document.getElementById("navMob").style.display = "none";
+        }
+    }
+
+    $(document).ready(function() { // better to use $(document).ready(function(){
+        if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            $('#phonePing').on('click touchstart', function() {
+                $('#phonePing').removeClass('circle_flex_div');
+                $('#phonePing').addClass('circle_flex_div_mobilePhone_touch');
+                console.log("Touched");
+            });
+
+            $('#skypePing').on('click touchstart', function() {
+                $('#skypePing').removeClass('circle_flex_div');
+                $('#skypePing').addClass('circle_flex_div_mobileSkype_touch');
+            });
+        }
+    });
+    //window.addEventListener("resize", navDisplay);
 
 </script>
 
