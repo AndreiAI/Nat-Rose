@@ -12,18 +12,20 @@
     <link rel="stylesheet" href="cycling.css" />
     <script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
-    
+
     <script>
         function GoBack() {
-            if(document.referrer.includes("liveinharmony")) window.history.back(); else window.location.href = "https://liveinharmony.co.uk/test/";
+            if (document.referrer.includes("liveinharmony")) window.history.back();
+            else window.location.href = "https://liveinharmony.co.uk/test/";
         }
+
     </script>
 </head>
 
 <body onscroll="onScroll(this);">
-    <div class="homepageLayer1"  onresize="navDisplay(this);" >
+    <div class="homepageLayer1" onresize="navDisplay(this);">
         <div class="homepageLayer2" id="container">
-            <div id="navMob" style="display: none;"  >
+            <div id="navMob" style="display: none;">
                 <div>
                     <img id="menuButton" src="res/hamburgerMenu.png">
                 </div>
@@ -77,7 +79,7 @@
             </h1>
             <article>
                 <p>We offer cycling tours and/or lodging in the heart of the Midi-Pyrénées, Southern France, unquestionably, one of the most beautiful parts of the world.</p>
-                <p>At LIH, we believe that cycling is undoubtedly one of the finest ways to get around and to see the world. The tranquility and the freedom, all of which, make the adventure, unforgettable. Over the course of your cycling trip/tour, you will be treated to some of the most beautiful countryside, challenging terrains, delicious and varied foods and lots of smiles.</p>
+                <p>At LIH, we believe that cycling is undoubtedly one of the finest ways to get around and to see the world. The tranquillity and the freedom, all of which, make the adventure, unforgettable. Over the course of your cycling trip/tour, you will be treated to some of the most beautiful countryside, challenging terrains, delicious and varied foods and lots of smiles.</p>
                 <p>If you decide to venture off on your own and/or with friends, we also offer bed and board.</p>
                 <img class="img1" src='res/cycling0.jpeg'>
                 <p>Aside from cycling, we are planning on offering walking and mountain climbing in the near future. We want people to rediscover nature, by understanding how important it is to live a healthy lifestyle, by doing the things they love. </p>
@@ -92,45 +94,47 @@
 </body>
 
 <script>
-    function hideMenuButton(){
+    function hideMenuButton() {
         document.getElementById("menuButton").style.display = "none";
         document.getElementById("menu").style.display = "block";
     }
-        
-    function getMenuButton(){
+
+    function getMenuButton() {
         document.getElementById("menuButton").style.display = "block";
         document.getElementById("menu").style.display = "none";
     }
-    
-    $('#menuButton').click(function (evt) {
+
+    $('#menuButton').click(function(evt) {
         evt.stopPropagation();
-        
+
         hideMenuButton();
     });
-    
-    
-    $('.homepageLayer2').click(function (evt) {
+
+
+    $('.homepageLayer2').click(function(evt) {
         evt.stopPropagation();
-        
+
         getMenuButton();
     });
-    
-    if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
-        document.getElementById("navMob").style.display =  "block";
+
+    if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("navMob").style.display = "block";
     } else {
-        document.getElementById("navMob").style.display =  "none";
+        document.getElementById("navMob").style.display = "none";
     }
-    
+
     function navDisplay(e) {
         console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
 
-        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
-            document.getElementById("navMob").style.display =  "block";
+        if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display = "block";
         } else {
-            document.getElementById("navMob").style.display =  "none";
+            document.getElementById("navMob").style.display = "none";
         }
     }
-    
+
     //window.addEventListener("resize", navDisplay);
+
 </script>
+
 </html>

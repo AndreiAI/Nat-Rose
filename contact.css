@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media all and (max-aspect-ratio: 1/1) {
     h1 {
         position: absolute;
@@ -12,7 +17,7 @@
         position: relative;
         text-align: center;
         font-weight: normal;
-        top: 23.33vw;
+        top: 22.4vw;
         margin: 0 auto;
         font-size: 2.2vw;
     }
@@ -22,7 +27,7 @@
         flex: 1 0;
         flex-basis: auto;
         justify-content: center;
-        margin-top: 28.8vw;
+        margin-top: 26.8vw;
         margin-left: 5.07vw;
         margin-right: 5.07vw;
     }
@@ -485,7 +490,7 @@
         font-weight: normal;
         margin: 0 auto;
         top: 11.25vw;
-        margin-top: 2.22vw;
+        margin-top: -0.97vw;
     }
 
     .briefDescription_form_div_rectangle {
@@ -552,78 +557,19 @@
         display: none;
     }
 
-    /*
-    Pop-ups ahead
-    
 
-    .popup {
-        position: absolute;
-        left: 5vw;
-        margin-left: 1.76vw;
-        top: 5.625vw;
-        margin-top: -11.25vw;
-        opacity: 0;
-        transition: all 1s;
-        -webkit-transition: all 1s;
-    }
-
-    .popup svg {
-        margin-top: -0.16875vw;
-        z-index: 1;
-    }
-
-    .popup div {
-        width: 15vw;
-    }
-
-    .popup div {
-        padding: 1.6875vw 3vw 1.6875vw 3vw;
-        background-color: black;
-        border-radius: 25px;
-        color: white;
+    #payPalForm {
+        font-size: 2.2vw;
+        position: relative;
         text-align: center;
+        font-weight: normal;
+        margin: 0 auto;
+        top: 16.15vw;
     }
 
-    .circle_flex_div:hover>.popup {
-        margin-left: 2.2vw;
-        margin-top: -12.0375vw;
-        opacity: 1;
+    #payPalForm input {
+        width: 20vw;
     }
-
-    .popupReverse {
-        position: absolute;
-        left: 2.5vw;
-        margin-left: -6.1vw;
-        top: 5.625vw;
-        margin-top: -11.25vw;
-        opacity: 0;
-        transition: all 1s;
-        -webkit-transition: all 1s;
-    }
-
-    .popupReverse>svg {
-        margin-top: -0.16875vw;
-        z-index: 1;
-    }
-
-    .popupReverse>div {
-        width: 15vw;
-    }
-
-    .popupReverse>div {
-        padding: 1.6875vw 3vw 1.6875vw 3vw;
-        background-color: black;
-        border-radius: 25px;
-        color: white;
-        text-align: center;
-    }
-
-    .circle_flex_div:hover>.popupReverse {
-        margin-left: -6.54vw;
-        margin-top: -12.0375vw;
-        opacity: 1;
-    }
-    */
 }
 
 
@@ -1100,6 +1046,18 @@
         color: white;
     }
 
+
+    #payPalForm {
+        position: relative;
+        text-align: center;
+        font-weight: normal;
+        margin: 0 auto;
+        top: 14.9vw;
+    }
+
+    #payPalForm input {
+        width: 15vw;
+    }
 
     /*
     Pop-ups ahead

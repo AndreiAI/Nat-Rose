@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="fonts.css" />
     <link rel="stylesheet" href="about.css" />
     <script type="text/javascript" src="res/jquery-3.2.1.min.js"></script>
-    
+
     <script>
         function GoBack() {
-            if(document.referrer.includes("liveinharmony")) window.history.back(); else window.location.href = "https://liveinharmony.co.uk/test/";
+            if (document.referrer.includes("liveinharmony")) window.history.back();
+            else window.location.href = "https://liveinharmony.co.uk/test/";
         }
+
     </script>
 </head>
 
-<body onresize="navDisplay(this);" >
+<body onresize="navDisplay(this);">
     <div class="homepageLayer1">
         <div class="homepageLayer2" id="container">
-            <div id="navMob" style="display: none;"  >
+            <div id="navMob" style="display: none;">
                 <div>
                     <img id="menuButton" src="res/hamburgerMenu.png">
                 </div>
@@ -77,60 +79,72 @@
                 <p>Live in Harmony (LIH) came about from the need to create a system that works with the planet. We aim to create a lifestyle where people cycle, learn to grow food, make/source 'free' energy, mend/make clothing and keep bees. We believe life should be about learning, education and exploration, while achieving one's goals, but not at the expense of the planet and/or others. </p>
                 <p>We offer a range of courses to educate people (for free) how to work with the planet by teaching about the environment, sustainability, permaculture and green energy. At LIH, we pride ourselves on giving back and understand how important it is to preserve our beautiful planet. </p>
                 <p>Our team has been carefully selected and is not limited to:</p>
-                <ul>
-                    <li>    Designers</li>
-                    <li>    Cyclists</li>
-                    <li>    Food Connoisseurs</li>
-                    <li>    Environmentalists</li>
-                    <li>    Animal Lovers</li>
-                    <li>    Engineers</li>
+                <ul id="aboutList">
+                    <li> Designers</li>
+                    <li> Cyclists</li>
+                    <li> Food Connoisseurs</li>
+                    <li> Environmentalists</li>
+                    <li> Animal Lovers</li>
+                    <li> Engineers</li>
                 </ul>
             </article>
+            <form id="payPalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">​
+
+                <input type="hidden" name="cmd" value="_s-xclick">​
+
+                <input type="hidden" name="hosted_button_id" value="JKJASUYVW23TS">​
+
+                <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">​
+
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">​
+
+            </form>
         </div>
     </div>
 
 </body>
 <script>
-    function hideMenuButton(){
+    function hideMenuButton() {
         document.getElementById("menuButton").style.display = "none";
         document.getElementById("menu").style.display = "block";
     }
-        
-    function getMenuButton(){
+
+    function getMenuButton() {
         document.getElementById("menuButton").style.display = "block";
         document.getElementById("menu").style.display = "none";
     }
-    
-    $('#menuButton').click(function (evt) {
+
+    $('#menuButton').click(function(evt) {
         evt.stopPropagation();
-        
+
         hideMenuButton();
     });
-    
-    
-    $('.homepageLayer2').click(function (evt) {
+
+
+    $('.homepageLayer2').click(function(evt) {
         evt.stopPropagation();
-        
+
         getMenuButton();
     });
-    
-    if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
-        document.getElementById("navMob").style.display =  "block";
+
+    if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("navMob").style.display = "block";
     } else {
-        document.getElementById("navMob").style.display =  "none";
+        document.getElementById("navMob").style.display = "none";
     }
-    
+
     function navDisplay(e) {
         console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
 
-        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
-            document.getElementById("navMob").style.display =  "block";
+        if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display = "block";
         } else {
-            document.getElementById("navMob").style.display =  "none";
+            document.getElementById("navMob").style.display = "none";
         }
     }
-    
+
     //window.addEventListener("resize", navDisplay);
+
 </script>
 
 </html>

@@ -15,15 +15,17 @@
     <script type="text/javascript" src="octagons.js"></script>
     <script type="text/javascript" src="scroll.js"></script>
     <script src="controls.js"></script>
-    
+
     <script>
         function GoBack() {
-            if(document.referrer.includes("liveinharmony")) window.history.back(); else window.location.href = "https://liveinharmony.co.uk/test/";
+            if (document.referrer.includes("liveinharmony")) window.history.back();
+            else window.location.href = "https://liveinharmony.co.uk/test/";
         }
+
     </script>
 </head>
 
-<body onscroll="onScroll(this);" onresize="navDisplay(this);" >
+<body onscroll="onScroll(this);" onresize="navDisplay(this);">
     <div class="controls">
         <label>Menu: top margin</label>
         <input id="navMenuTop" type="number" step="0.01" onchange="navMenuTop(this)" /><br/>
@@ -35,7 +37,7 @@
         <input id="navMenuBorderThickness" type="number" step="0.01" onchange="navMenuBorderThickness(this)" /><br/>
         <!-- done -->
         <label>Menu: border color</label>
-        <input id="navMenuBorderColor" type="color" onchange="navMenuBorderColor(this)" value="#D9D9D9" /><br/>
+        <input id="navMenuBorderColor" type="color" onchange="navMenuBorderColor(this)" value="#F5F5F5" /><br/>
         <!-- done -->
         <label>Logo: size</label>
         <input id="navLogoSize" type="number" step="0.01" onchange="navLogoSize(this)" /><br/>
@@ -136,18 +138,18 @@
         document.getElementById("navMenuLeft").value = 3.3;
         document.getElementById("navMenuBorderThickness").value = 1;
         document.getElementById("navMenuBorderColor").value = "#D8D8D8";
-        
-        document.getElementById("navLogoSize").value = 20;
-        document.getElementById("tuneMarginTop").value = 12.31;
-        document.getElementById("tuneFontSize").value = 5.5;
-        document.getElementById("octagonsMarginTop").value = 34.11;
-        document.getElementById("octagonsMargins").value = 4.11;
-        document.getElementById("octagonMargins").value = 6;
-        document.getElementById("octagonSize").value = 17;
+
+        document.getElementById("navLogoSize").value = 11;
+        document.getElementById("tuneMarginTop").value = 5.15;
+        document.getElementById("tuneFontSize").value = 4.44;
+        document.getElementById("octagonsMarginTop").value = 24.65;
+        document.getElementById("octagonsMargins").value = 20.8;
+        document.getElementById("octagonMargins").value = 4.91;
+        document.getElementById("octagonSize").value = 11.45;
         document.getElementById("pingsMarginTop").value = 2;
         document.getElementById("pingsMarginRight").value = 0;
         document.getElementById("pingsMarginLeft").value = 0;
-        document.getElementById("pingsHeight").value = 12;
+        document.getElementById("pingsHeight").value = 6;
         //
         document.getElementById("ping1MarginTop").value = 3.25;
         document.getElementById("ping1MarginLeft").value = -0.43;
@@ -161,27 +163,29 @@
         document.getElementById("ping3MarginLeft").value = -0.85;
         document.getElementById("ping3Height").value = 11.11;
         //
-        document.getElementById("comeMarginTop").value = 77.22;
-        document.getElementById("comeFontSize").value = 2.2;
-        document.getElementById("circlesMarginTop").value = 33.44;
-        document.getElementById("circlesMargins").value = 6;
-        document.getElementById("circleMargins").value = 4;
-        document.getElementById("circleSize").value = 15.55;
-        document.getElementById("circleTextMarginTop").value = 48.36;
-        document.getElementById("circleTextFontSize").value = 1.6;
+        document.getElementById("comeMarginTop").value = 57.16;
+        document.getElementById("comeFontSize").value = 1.38;
+        document.getElementById("circlesMarginTop").value = 20.48;
+        document.getElementById("circlesMargins").value = 22.07;
+        document.getElementById("circleMargins").value = 3.9;
+        document.getElementById("circleSize").value = 9.6;
+        document.getElementById("circleTextMarginTop").value = 50;
+        document.getElementById("circleTextFontSize").value = 0.99;
         document.getElementById("footerMarginBottom").value = 1.575;
         document.getElementById("footerFontSize").value = 1.6;
+
     </script>
-    <div class="homepageLayer1">
+    <div class="homepageLayer1" id="container">
         <div class="homepageLayer2">
-            <div id="navMob" style="display: none;" >
+            <!-- Navigation mobile -->
+            <div id="navMob" style="display: none;">
                 <div>
                     <img id="menuButton" src="res/hamburgerMenu.png">
                 </div>
                 <ul id="menu">
 
                     <li>
-                        <a href="index.html" title="Home">Home</a>
+                        <a href="index.html" title="Home" style="color: #928F1B;">Home</a>
                     </li>
                     <li>
                         <a href="about.html" title="About">About</a>
@@ -200,6 +204,7 @@
                     </li>
                 </ul>
             </div>
+
             <nav class="nav_flex">
                 <div class="nav_flex_div0">
                     <a href="."><span>Home</span></a>
@@ -229,19 +234,19 @@
             </h1>
             <div class="octagons_flex">
                 <a href="cycling.html">
-                    <div class="octagons_flex_div">
+                    <div id="octagon1" class="octagons_flex_div">
                         <img class="octagon_img" onmouseover="octagon_img1Hover(this);" src="res/octagonCropped.png" />
                         <img id="octagon_img1" class="ping_img" style="pointer-events: none" src="res/cycle_blck_bg_copy.png" />
                     </div>
                 </a>
                 <a href="grow.html">
-                    <div class="octagons_flex_div">
+                    <div id="octagon2" class="octagons_flex_div">
                         <img class="octagon_img" onmouseover="octagon_img2Hover(this);" src="res/octagonCropped.png" />
                         <img id="octagon_img2" class="ping_img" style="pointer-events: none" onmouseover="octagon_img2Hover(this);" src="res/corn_copy-1.png" />
                     </div>
                 </a>
                 <a href="solar.html">
-                    <div class="octagons_flex_div">
+                    <div id="octagon3" class="octagons_flex_div">
                         <img class="octagon_img" onmouseover="octagon_img3Hover(this);" src="res/octagonCropped.png" />
                         <img id="octagon_img3" class="ping_img" style="pointer-events: none" onmouseover="octagon_img3Hover(this);" src="res/wind_mill_copy-3.png" />
                     </div>
@@ -249,79 +254,90 @@
             </div>
 
             <h2 class="come">
-                COME JOIN OUR GROWING COMMUNITY & HELP
+                COME JOIN OUR GROWING TEAM & HELP
                 <pre></pre>GENERATIONS TO COME!
             </h2>
             <div class="circle_flex">
-                <div class="circle_flex_div">
-                    <span class="circle_text">VOLUNTEER</span>
-                    <img class="circle_img" src="res/circle.png" />
-                </div>
+                <a href="volunteer.html">
+                    <div class="circle_flex_div">
+                        <span class="circle_text">VOLUNTEER</span>
+                        <img class="circle_img" src="res/circle.png" />
+                    </div>
+                </a>
                 <div class="intercircle">
                 </div>
-                <div class="circle_flex_div">
-                    <span class="circle_text">EMAIL</span>
-                    <img class="circle_img" src="res/circleGreen.png" />
-                </div>
+                <a href="contact.html">
+                    <div class="circle_flex_div">
+                        <span class="circle_text">EMAIL</span>
+                        <img class="circle_img" src="res/circleGreen.png" />
+                    </div>
+                </a>
                 <div class="intercircle">
                 </div>
-                <div class="circle_flex_div">
-                    <span class="circle_text">NEWSLETTER</span>
-                    <img class="circle_img" src="res/circle.png" />
-                </div>
+                <a href="newsletter.html">
+                    <div class="circle_flex_div">
+                        <span class="circle_text">NEWSLETTER</span>
+                        <img class="circle_img" src="res/circle.png" />
+                    </div>
+                </a>
             </div>
             <img id="arrowScrollBack" class="arrowBack" onclick="scrollUp(this);" />
             <!--
             <img id="arrowScroll" class="arrow" onclick="scrollUp(this);" />
             -->
             <footer>
-                Copyright &copy; 2017 Built by ???Limited. All rights reserved.
+                <span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration
+                <pre></pre> Copyright &copy; 2018 Built by Andrei Iordache & designed by Live In Harmony.
+                <pre></pre>All rights reserved.
+                <!--
                 <pre></pre>Registered in England Company No. ??? VAT Registration No. ???
+                -->
             </footer>
         </div>
     </div>
-    <script>
-    function hideMenuButton(){
+</body>
+<script>
+    function hideMenuButton() {
         document.getElementById("menuButton").style.display = "none";
         document.getElementById("menu").style.display = "block";
     }
-        
-    function getMenuButton(){
+
+    function getMenuButton() {
         document.getElementById("menuButton").style.display = "block";
         document.getElementById("menu").style.display = "none";
     }
-    
-    $('#menuButton').click(function (evt) {
+
+    $('#menuButton').click(function(evt) {
         evt.stopPropagation();
-        
+
         hideMenuButton();
     });
-    
-    
-    $('.homepageLayer2').click(function (evt) {
+
+
+    $('.homepageLayer2').click(function(evt) {
         evt.stopPropagation();
-        
+
         getMenuButton();
     });
-    
-    if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
-        document.getElementById("navMob").style.display =  "block";
+
+    if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("navMob").style.display = "block";
     } else {
-        document.getElementById("navMob").style.display =  "none";
+        document.getElementById("navMob").style.display = "none";
     }
-    
+
     function navDisplay(e) {
         console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
 
-        if(document.documentElement.clientWidth < document.documentElement.clientHeight) {
-            document.getElementById("navMob").style.display =  "block";
+        if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display = "block";
         } else {
-            document.getElementById("navMob").style.display =  "none";
+            document.getElementById("navMob").style.display = "none";
         }
     }
-    
+
     //window.addEventListener("resize", navDisplay);
+
 </script>
-</body>
 
 </html>

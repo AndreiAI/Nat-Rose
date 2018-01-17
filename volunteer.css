@@ -4,42 +4,21 @@ a {
 
 @media all and (max-aspect-ratio: 1/1) {
 
-     article {
+    article {
         position: absolute;
 
-        font-size: 2.5vw; /*from 2*/
+        font-size: 2.5vw;
+        /*from 2*/
         text-align: justify;
         top: 34vw;
         left: 5.8vw;
         width: 82.22vw;
     }
 
-    article * {
-
-    }
-
     p {
-        margin-top: 3.125vw;    /*from 3.125 */
-        margin-bottom: 3.125vw;
-    }
-
-    article ul {
-        position: relative;
-        list-style-type: none;
         margin-top: 3.125vw;
-        padding-left: 0vw;
-    }
-
-    article li:before {
-        position: relative;
-        display: inline-block;
-        content: '';
-        width: 3.22vw;
-        height: 2.96vw;
-        background-repeat: no-repeat;
-        background-image: url(res/listArrow2.png);
-        background-size: 4.22vw 4.22vw;
-        background-position: 0 0;
+        /*from 3.125 */
+        margin-bottom: 3.125vw;
     }
 }
 
@@ -61,9 +40,7 @@ a {
     }
 
 
-    article * {
-
-    }
+    article * {}
 
     p {
         margin-top: 1.125vw;

@@ -3,19 +3,19 @@
     article {
         position: absolute;
 
-        font-size: 2.5vw; /*from 2*/
+        font-size: 2.5vw;
+        /*from 2*/
         text-align: justify;
         top: 34vw;
         left: 5.8vw;
         width: 82.22vw;
     }
 
-    article * {
+    article * {}
 
-    }
-
-    p {
-        margin-top: 3.125vw;    /*from 3.125 */
+    article p {
+        margin-top: 3.125vw;
+        /*from 3.125 */
         margin-bottom: 3.125vw;
     }
 
@@ -26,7 +26,7 @@
         padding-left: 0vw;
     }
 
-    article li:before {
+    article #aboutList li:before {
         position: relative;
         display: inline-block;
         content: '';
@@ -36,6 +36,19 @@
         background-image: url(res/listArrow2.png);
         background-size: 4.22vw 4.22vw;
         background-position: 0 0;
+    }
+
+    #payPalForm {
+        font-size: 2.2vw;
+        position: relative;
+        text-align: center;
+        font-weight: normal;
+        margin: 0 auto;
+        top: 118.8vw;
+    }
+
+    #payPalForm input {
+        width: 20vw;
     }
 }
 
@@ -57,9 +70,7 @@
         width: 54.27vw;
     }
 
-    article * {
-
-    }
+    article * {}
 
     p {
         margin-top: 1.125vw;
@@ -83,5 +94,17 @@
         background-image: url(res/listArrow2.png);
         background-size: 1.22vw 1.22vw;
         background-position: 0 0;
+    }
+
+    #payPalForm {
+        position: relative;
+        text-align: center;
+        font-weight: normal;
+        margin: 0 auto;
+        top: 34.44vw;
+    }
+
+    #payPalForm input {
+        width: 15vw;
     }
 }

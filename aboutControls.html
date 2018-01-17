@@ -10,10 +10,19 @@
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="controls.css" />
     <script type="text/javascript" src=aboutControls.js></script>
+    <script>
+        function GoBack() {
+            if (document.referrer.includes("liveinharmony")) window.history.back();
+            else window.location.href = "https://liveinharmony.co.uk/test/";
+        }
+    </script>
 </head>
 
 <body onresize="navDisplay(this);">
     <div class="controls">
+        <label>Paypal: top </label>
+        <input id="paypalTop" type="number" step="0.01" onchange="paypalTop(this)" /><br/>
+        <!-- done -->
         <label>Header: top </label>
         <input id="headerTop" type="number" step="0.01" onchange="headerTop(this)" /><br/>
         <!-- done -->
@@ -43,6 +52,8 @@
         <!-- done -->
     </div>
     <script>
+        document.getElementById("paypalTop").value = 34.44;
+
         document.getElementById("headerTop").value = 12.8;
         document.getElementById("headerFontSize").value = 5.5;
         document.getElementById("articleTop").value = 34;
@@ -52,10 +63,35 @@
         document.getElementById("paragraphsMarginsTB").value = 3.125;
         document.getElementById("listMarginTop").value = 3.125;
         document.getElementById("listPaddingLeft").value = 0;
-
     </script>
     <div class="homepageLayer1">
-        <div class="homepageLayer2">
+        <div class="homepageLayer2" id="container">
+            <div id="navMob" style="display: none;">
+                <div>
+                    <img id="menuButton" src="res/hamburgerMenu.png">
+                </div>
+                <ul id="menu">
+
+                    <li>
+                        <a href="index.html" title="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="About" style="color: #928F1B;">About</a>
+                    </li>
+                    <li>
+                        <a href="mission.html" title="Mission">Mission</a>
+                    </li>
+                    <li>
+                        <a href="services.html" title="Services">Services</a>
+                    </li>
+                    <li>
+                        <a href="team.html" title="Team">Team</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
             <nav class="nav_flex">
                 <div class="nav_flex_div0">
                     <a href="."><span>Home</span></a>
@@ -87,7 +123,7 @@
                 <p>We offer a range of free courses to educate people how to work with the planet by teaching about the environment, sustainability, permaculture and green energy. At LIH, we pride ourselves on giving back and understanding the importance of preserving our beautiful planet. </p>
                 <p>Our team has been carefully selected in order to offer you the best possible experience. We enjoy what we do and hope you will too! </p>
                 <p>Our team consists of but is not limited to:</p>
-                <ul>
+                <ul id="aboutList">
                     <li>Designers</li>
                     <li>Cyclists</li>
                     <li>Food Connoisseurs</li>
@@ -96,8 +132,59 @@
                     <li>Engineers</li>
                 </ul>
             </article>
+            <form id="payPalForm" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">​
+
+                <input type="hidden" name="cmd" value="_s-xclick">​
+
+                <input type="hidden" name="hosted_button_id" value="JKJASUYVW23TS">​
+
+                <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">​
+
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">​
+            </form>
         </div>
     </div>
 </body>
+<script>
+    function hideMenuButton() {
+        document.getElementById("menuButton").style.display = "none";
+        document.getElementById("menu").style.display = "block";
+    }
 
+    function getMenuButton() {
+        document.getElementById("menuButton").style.display = "block";
+        document.getElementById("menu").style.display = "none";
+    }
+
+    $('#menuButton').click(function(evt) {
+        evt.stopPropagation();
+
+        hideMenuButton();
+    });
+
+
+    $('.homepageLayer2').click(function(evt) {
+        evt.stopPropagation();
+
+        getMenuButton();
+    });
+
+    if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+        document.getElementById("navMob").style.display = "block";
+    } else {
+        document.getElementById("navMob").style.display = "none";
+    }
+
+    function navDisplay(e) {
+        console.log(document.documentElement.clientWidth, document.documentElement.clientHeight);
+
+        if (document.documentElement.clientWidth < document.documentElement.clientHeight) {
+            document.getElementById("navMob").style.display = "block";
+        } else {
+            document.getElementById("navMob").style.display = "none";
+        }
+    }
+
+    //window.addEventListener("resize", navDisplay);
+</script>
 </html>

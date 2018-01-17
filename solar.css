@@ -14,9 +14,7 @@ a {
         width: 82.22vw;
     }
 
-    article * {
-
-    }
+    article * {}
 
     p {
         margin-top: 3.125vw;
@@ -26,14 +24,14 @@ a {
     .img1 {
         margin-top: 1.125vw;
         margin-bottom: 1.125vw;
-        width: 84.27vw;
+        width: 82.22vw;
         height: 46.98vw;
     }
 
     .img2 {
         margin-top: 1.125vw;
         margin-bottom: 1.125vw;
-        width: 84.27vw;
+        width: 82.22vw;
         height: 46.98vw;
     }
 }

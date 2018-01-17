@@ -3,6 +3,13 @@
 
 <head>
     <meta charset="UTF-8" />
+
+    <meta property="og:image" content="https://liveinharmony.co.uk/test/res/thumbnail.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://liveinharmony.co.uk/test" />
+    <meta property="og:title" content="Live In Harmony" />
+    <meta property="og:description" content="Description" />
+
     <title>Live In Harmony</title>
     <link rel="stylesheet" href="twoPage.css" />
     <link rel="stylesheet" href="navBar.css" />
@@ -19,6 +26,7 @@
             if (document.referrer.includes("liveinharmony")) window.history.back();
             else window.location.href = "https://liveinharmony.co.uk/test/";
         }
+
     </script>
 </head>
 
@@ -82,19 +90,19 @@
             </h1>
             <div class="octagons_flex">
                 <a href="cycling.html">
-                    <div class="octagons_flex_div">
+                    <div id="octagon1" class="octagons_flex_div">
                         <img class="octagon_img" onmouseover="octagon_img1Hover(this);" src="res/octagonCropped.png" />
                         <img id="octagon_img1" class="ping_img" style="pointer-events: none" src="res/cycle_blck_bg_copy.png" />
                     </div>
                 </a>
                 <a href="grow.html">
-                    <div class="octagons_flex_div">
+                    <div id="octagon2" class="octagons_flex_div">
                         <img class="octagon_img" onmouseover="octagon_img2Hover(this);" src="res/octagonCropped.png" />
                         <img id="octagon_img2" class="ping_img" style="pointer-events: none" onmouseover="octagon_img2Hover(this);" src="res/corn_copy-1.png" />
                     </div>
                 </a>
                 <a href="solar.html">
-                    <div class="octagons_flex_div">
+                    <div id="octagon3" class="octagons_flex_div">
                         <img class="octagon_img" onmouseover="octagon_img3Hover(this);" src="res/octagonCropped.png" />
                         <img id="octagon_img3" class="ping_img" style="pointer-events: none" onmouseover="octagon_img3Hover(this);" src="res/wind_mill_copy-3.png" />
                     </div>
@@ -134,7 +142,8 @@
             <img id="arrowScroll" class="arrow" onclick="scrollUp(this);" />
             -->
             <footer>
-                Copyright &copy; 2018 Built by Andrei Iordache & designed by Live In Harmony.
+                <span style='font-weight: bold;'>'LIVE IN HARMONY'</span> is dedicated to the memory of James King, my guardian & inspiration
+                <pre></pre> Copyright &copy; 2018 Built by Andrei Iordache & designed by Live In Harmony.
                 <pre></pre>All rights reserved.
                 <!--
                 <pre></pre>Registered in England Company No. ??? VAT Registration No. ???
@@ -184,6 +193,7 @@
     }
 
     //window.addEventListener("resize", navDisplay);
+
 </script>
 
 </html>
